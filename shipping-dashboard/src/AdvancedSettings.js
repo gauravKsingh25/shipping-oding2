@@ -1,4 +1,24 @@
 import React, { useState } from 'react';
+import { 
+  Plus, 
+  Download, 
+  Upload, 
+  Edit3, 
+  Trash2, 
+  X, 
+  Save, 
+  RefreshCw,
+  MoreHorizontal,
+  Truck,
+  Map,
+  DollarSign,
+  Check,
+  AlertCircle,
+  Eye,
+  EyeOff,
+  Lock,
+  LogIn
+} from 'lucide-react';
 
 export default function AdvancedSettings({ 
   providers, 
@@ -57,9 +77,9 @@ export default function AdvancedSettings({
   const [newRowData, setNewRowData] = useState({});
 
   const tabs = [
-    { id: 'providers', label: 'Service Providers', icon: '🚚', description: 'Manage shipping service providers' },
-    { id: 'states', label: 'State Charges', icon: '🗺️', description: 'Manage per-state shipping rates' },
-    { id: 'fixed', label: 'Fixed Charges', icon: '💰', description: 'Manage fixed fees and surcharges' },
+    { id: 'providers', label: 'Service Providers', icon: <Truck size={18} />, description: 'Manage shipping service providers' },
+    { id: 'states', label: 'State Charges', icon: <Map size={18} />, description: 'Manage per-state shipping rates' },
+    { id: 'fixed', label: 'Fixed Charges', icon: <DollarSign size={18} />, description: 'Manage fixed fees and surcharges' },
   ];
 
   // Data validation schemas
@@ -433,9 +453,7 @@ export default function AdvancedSettings({
             className="action-btn create-btn"
             onClick={startCreateRow}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2"/>
-            </svg>
+            <Plus size={16} />
             Create New Row
           </button>
         </div>
@@ -455,9 +473,7 @@ export default function AdvancedSettings({
               onClick={startCreateRow}
               disabled={editingRowIndex !== null || showCreateRow}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2"/>
-              </svg>
+              <Plus size={16} />
               Create New
             </button>
             <button 
@@ -465,9 +481,7 @@ export default function AdvancedSettings({
               onClick={() => exportCurrentData(type)}
               title="Export Current Data"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" strokeWidth="2"/>
-              </svg>
+              <Download size={16} />
               Export
             </button>
           </div>
@@ -512,15 +526,11 @@ export default function AdvancedSettings({
             </div>
             <div className="form-actions">
               <button className="cancel-btn" onClick={cancelCreateRow}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2"/>
-                </svg>
+                <X size={16} />
                 Cancel
               </button>
               <button className="save-btn" onClick={saveNewRow}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" stroke="currentColor" strokeWidth="2"/>
-                </svg>
+                <Save size={16} />
                 Save
               </button>
             </div>
@@ -591,18 +601,14 @@ export default function AdvancedSettings({
                           onClick={cancelEdit}
                           title="Cancel Edit"
                         >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2"/>
-                          </svg>
+                          <X size={14} />
                         </button>
                         <button 
                           className="action-btn save-edit-btn"
                           onClick={saveEdit}
                           title="Save Changes"
                         >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                            <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" stroke="currentColor" strokeWidth="2"/>
-                          </svg>
+                          <Save size={14} />
                         </button>
                       </div>
                     ) : (
@@ -614,10 +620,7 @@ export default function AdvancedSettings({
                           disabled={editingRowIndex !== null || showCreateRow}
                           title="Edit Row"
                         >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                            <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" strokeWidth="2"/>
-                            <path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" strokeWidth="2"/>
-                          </svg>
+                          <Edit3 size={14} />
                         </button>
                         <button 
                           className="action-btn delete-btn"
@@ -625,9 +628,7 @@ export default function AdvancedSettings({
                           disabled={editingRowIndex !== null || showCreateRow}
                           title="Delete Row"
                         >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" strokeWidth="2"/>
-                          </svg>
+                          <Trash2 size={14} />
                         </button>
                       </div>
                     )}
@@ -776,7 +777,7 @@ export default function AdvancedSettings({
       <div className="advanced-settings-overlay">
         <div className="password-modal">
           <div className="password-header">
-            <h2>🔒 Advanced Settings Access</h2>
+            <h2><Lock size={20} style={{ display: 'inline', marginRight: '8px' }} /> Advanced Settings Access</h2>
             <p>Please enter the administrator password to continue</p>
           </div>
           
@@ -795,11 +796,7 @@ export default function AdvancedSettings({
               />
               {passwordError && (
                 <div className="password-error">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                    <line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" strokeWidth="2"/>
-                    <line x1="9" y1="9" x2="15" y2="15" stroke="currentColor" strokeWidth="2"/>
-                  </svg>
+                  <AlertCircle size={16} />
                   {passwordError}
                 </div>
               )}
@@ -818,9 +815,7 @@ export default function AdvancedSettings({
                 className="password-submit-btn"
                 disabled={!passwordInput.trim()}
               >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3" stroke="currentColor" strokeWidth="2"/>
-                </svg>
+                <LogIn size={16} />
                 Access Settings
               </button>
             </div>
@@ -844,41 +839,28 @@ export default function AdvancedSettings({
                 className="dropdown-trigger"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="1" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="19" cy="12" r="1" stroke="currentColor" strokeWidth="2"/>
-                  <circle cx="5" cy="12" r="1" stroke="currentColor" strokeWidth="2"/>
-                </svg>
+                <MoreHorizontal size={20} />
               </button>
               {dropdownOpen && (
                 <div className="dropdown-menu">
                   <button onClick={downloadAllSamples}>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" strokeWidth="2"/>
-                    </svg>
+                    <Download size={16} />
                     Download All Samples
                   </button>
                   <button onClick={exportAllData}>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke="currentColor" strokeWidth="2"/>
-                    </svg>
+                    <Upload size={16} />
                     Export All Data
                   </button>
                   <div className="dropdown-divider"></div>
                   <button onClick={reindexDatabase} className="reindex-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path d="M1 4v6h6M23 20v-6h-6" stroke="currentColor" strokeWidth="2"/>
-                      <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" stroke="currentColor" strokeWidth="2"/>
-                    </svg>
+                    <RefreshCw size={16} />
                     🔄 Reindex Database
                   </button>
                 </div>
               )}
             </div>
             <button className="close-btn" onClick={onClose}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2"/>
-              </svg>
+              <X size={24} />
             </button>
           </div>
         </div>

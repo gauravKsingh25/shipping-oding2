@@ -2,6 +2,20 @@ import React, { useEffect, useState, useCallback } from "react";
 import BoxDialog from "./BoxDialog";
 import ExportDialog from "./ExportDialog";
 import AdvancedSettings from "./AdvancedSettings";
+import { 
+  Settings, 
+  Package, 
+  ChevronDown, 
+  Plus, 
+  Copy, 
+  Trash2, 
+  Download, 
+  Calculator, 
+  Check,
+  Truck
+} from 'lucide-react';
+import { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, AlignmentType, BorderStyle } from 'docx';
+import { saveAs } from 'file-saver';
 
 export default function Dashboard() {
   const [providers, setProviders] = useState([]);
@@ -271,6 +285,214 @@ export default function Dashboard() {
     setVendorName("");
   };
 
+// HTML fallback function for quotation generation
+const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, totalPackages, totalWeight, formattedDate, cod, holiday, outstation) => {
+  return `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Quotation - ${vendorName}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            color: #2563eb;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .quote-details {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .provider-info {
+            background: #ecfdf5;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #059669;
+            margin-bottom: 30px;
+        }
+        .total-cost {
+            font-size: 1.8em;
+            color: #dc2626;
+            font-weight: bold;
+            text-align: center;
+            background: #fef2f2;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #dc2626;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+        }
+        th {
+            background: #f3f4f6;
+            font-weight: bold;
+            color: #374151;
+        }
+        .total-row {
+            background: #fef3c7;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .section-title {
+            color: #2563eb;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .package-item {
+            background: #f8fafc;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border-left: 3px solid #6366f1;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-style: italic;
+        }
+        .additional-services {
+            background: #eff6ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        @media print {
+            body { padding: 0; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SHIPPING QUOTATION</h1>
+    </div>
+
+    <div class="quote-details">
+        <p><strong>Date:</strong> ${formattedDate}</p>
+        <p><strong>Vendor:</strong> ${vendorName}</p>
+        <p><strong>Destination State:</strong> ${selectedState}</p>
+    </div>
+
+    <div class="provider-info">
+        <h2 style="color: #059669; margin-top: 0;">SELECTED PROVIDER</h2>
+        <p><strong>Provider:</strong> ${provider.providerName}</p>
+        <div class="total-cost">
+            Total Cost: ₹${provider.total}
+        </div>
+    </div>
+
+    <div class="section-title">PACKAGE DETAILS</div>
+    <p><strong>Total Packages:</strong> ${totalPackages}</p>
+    <p><strong>Total Applicable Weight:</strong> ${totalWeight} kg</p>
+    
+    ${boxes.map((box, idx) => `
+        <div class="package-item">
+            <strong>Package ${idx + 1}:</strong> ${box.length}×${box.breadth}×${box.height} cm, ${box.deadWeight} kg, Qty: ${box.quantity}
+        </div>
+    `).join('')}
+
+    <div class="section-title">COST BREAKDOWN</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th style="text-align: right;">Amount (₹)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Base Shipping Cost</td>
+                <td style="text-align: right;">${provider.baseCost}</td>
+            </tr>
+            <tr>
+                <td>Fuel Surcharge</td>
+                <td style="text-align: right;">${provider.fuelCharge}</td>
+            </tr>
+            <tr>
+                <td>Docket Charge</td>
+                <td style="text-align: right;">${provider.docket}</td>
+            </tr>
+            ${parseFloat(provider.codCharge) > 0 ? `
+            <tr>
+                <td>COD Charge</td>
+                <td style="text-align: right;">${provider.codCharge}</td>
+            </tr>` : ''}
+            ${parseFloat(provider.holidayCharge) > 0 ? `
+            <tr>
+                <td>Holiday Charge</td>
+                <td style="text-align: right;">${provider.holidayCharge}</td>
+            </tr>` : ''}
+            ${parseFloat(provider.outstationCharge) > 0 ? `
+            <tr>
+                <td>Outstation Charge</td>
+                <td style="text-align: right;">${provider.outstationCharge}</td>
+            </tr>` : ''}
+            ${parseFloat(provider.ngtGreenTax) > 0 ? `
+            <tr>
+                <td>NGT Green Tax</td>
+                <td style="text-align: right;">${provider.ngtGreenTax}</td>
+            </tr>` : ''}
+            ${parseFloat(provider.insuranceCharge) > 0 ? `
+            <tr>
+                <td>Insurance Charge</td>
+                <td style="text-align: right;">${provider.insuranceCharge}</td>
+            </tr>` : ''}
+            ${parseFloat(provider.stateSpecificCharge) > 0 ? `
+            <tr>
+                <td>Kerala/NE Handling Charge</td>
+                <td style="text-align: right;">${provider.stateSpecificCharge}</td>
+            </tr>` : ''}
+            <tr class="total-row">
+                <td><strong>TOTAL</strong></td>
+                <td style="text-align: right; color: #dc2626;"><strong>₹${provider.total}</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="section-title">ADDITIONAL SERVICES</div>
+    <div class="additional-services">
+        <p><strong>Cash on Delivery:</strong> ${cod ? 'Yes' : 'No'}</p>
+        <p><strong>Holiday Delivery:</strong> ${holiday ? 'Yes' : 'No'}</p>
+        <p><strong>Outstation Delivery:</strong> ${outstation ? 'Yes' : 'No'}</p>
+    </div>
+
+    <div class="footer">
+        <p>This quotation is valid for 30 days from the date of issue.</p>
+        <p>Generated on ${formattedDate} by Shipping Calculator</p>
+        <p class="no-print">You can print this page to PDF using your browser's print function (Ctrl+P)</p>
+    </div>
+</body>
+</html>`;
+};
+
   const handleSaveSelection = async () => {
     if (!vendorName.trim()) {
       alert('Please enter a vendor name');
@@ -284,46 +506,620 @@ export default function Dashboard() {
     }
 
     setLoading(true);
-    const selection = {
-      vendorName: vendorName.trim(),
-      providerName: provider.providerName,
-      total: parseFloat(provider.total),
-      date: new Date().toISOString().slice(0, 10)
-    };
-
+    
     try {
-      console.log('Sending selection:', selection);
-      const response = await fetch(`${API_BASE_URL}/api/selections/add`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(selection)
+      // Create Word document with quotation details
+      const currentDate = new Date();
+      const formattedDate = currentDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
       });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const result = await response.json();
-      console.log('Save response:', result);
       
-      if (result.success) {
-        alert('Selection saved successfully!');
-        setSavedSelections(prev => [result.data, ...prev]);
-        setSelectedProviderIdx(null);
-        setVendorName("");
-      } else {
-        throw new Error(result.error || 'Failed to save');
+      // Calculate package details
+      const totalPackages = boxes.reduce((sum, box) => sum + box.quantity, 0);
+      const totalWeight = boxes.reduce((sum, box) => {
+        const volWeight = (box.length * box.breadth * box.height) / 5000;
+        const applicableWeight = Math.max(volWeight, box.deadWeight);
+        return sum + (applicableWeight * box.quantity);
+      }, 0).toFixed(2);
+
+      try {
+        // Try to create DOCX document
+        const doc = new Document({
+          sections: [{
+            properties: {},
+            children: [
+              // Header
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: "SHIPPING QUOTATION",
+                    bold: true,
+                    size: 32,
+                    color: "2563eb"
+                  })
+                ],
+                alignment: AlignmentType.CENTER,
+                spacing: { after: 400 }
+              }),
+              
+              // Date and Quote Details
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Date: ${formattedDate}`,
+                    bold: true,
+                    size: 24
+                  })
+                ],
+                spacing: { after: 200 }
+              }),
+              
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Vendor: ${vendorName.trim()}`,
+                    bold: true,
+                    size: 24
+                  })
+                ],
+                spacing: { after: 200 }
+              }),
+              
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Destination State: ${selectedState}`,
+                    bold: true,
+                    size: 24
+                  })
+                ],
+                spacing: { after: 400 }
+              }),
+
+              // Selected Provider Section
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: "SELECTED PROVIDER",
+                    bold: true,
+                    size: 28,
+                    color: "059669"
+                  })
+                ],
+                alignment: AlignmentType.CENTER,
+                spacing: { after: 300 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Provider: ${provider.providerName}`,
+                    bold: true,
+                    size: 24
+                  })
+                ],
+                spacing: { after: 200 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Total Cost: ₹${provider.total}`,
+                    bold: true,
+                    size: 28,
+                    color: "dc2626"
+                  })
+                ],
+                spacing: { after: 400 }
+              }),
+
+              // Package Details Section
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: "PACKAGE DETAILS",
+                    bold: true,
+                    size: 28,
+                    color: "2563eb"
+                  })
+                ],
+                alignment: AlignmentType.CENTER,
+                spacing: { after: 300 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Total Packages: ${totalPackages}`,
+                    size: 22
+                  })
+                ],
+                spacing: { after: 200 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Total Applicable Weight: ${totalWeight} kg`,
+                    size: 22
+                  })
+                ],
+                spacing: { after: 300 }
+              }),
+
+              // Package breakdown
+              ...boxes.map((box, idx) => new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Package ${idx + 1}: ${box.length}×${box.breadth}×${box.height} cm, ${box.deadWeight} kg, Qty: ${box.quantity}`,
+                    size: 20
+                  })
+                ],
+                spacing: { after: 150 }
+              })),
+
+              // Cost Breakdown Section
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: "COST BREAKDOWN",
+                    bold: true,
+                    size: 28,
+                    color: "2563eb"
+                  })
+                ],
+                alignment: AlignmentType.CENTER,
+                spacing: { after: 300, before: 400 }
+              }),
+
+              // Cost breakdown table
+              new Table({
+                width: {
+                  size: 100,
+                  type: WidthType.PERCENTAGE,
+                },
+                rows: [
+                  new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({
+                          children: [new TextRun({ text: "Service", bold: true })],
+                          alignment: AlignmentType.CENTER
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({
+                          children: [new TextRun({ text: "Amount (₹)", bold: true })],
+                          alignment: AlignmentType.CENTER
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  }),
+                  new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "Base Shipping Cost" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.baseCost })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  }),
+                  new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "Fuel Surcharge" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.fuelCharge })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  }),
+                  new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "Docket Charge" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.docket })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  }),
+                  // Add conditional rows for additional charges
+                  ...(parseFloat(provider.codCharge) > 0 ? [new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "COD Charge" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.codCharge })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  })] : []),
+                  ...(parseFloat(provider.holidayCharge) > 0 ? [new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "Holiday Charge" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.holidayCharge })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  })] : []),
+                  ...(parseFloat(provider.outstationCharge) > 0 ? [new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "Outstation Charge" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.outstationCharge })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  })] : []),
+                  ...(parseFloat(provider.ngtGreenTax) > 0 ? [new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "NGT Green Tax" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.ngtGreenTax })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  })] : []),
+                  ...(parseFloat(provider.insuranceCharge) > 0 ? [new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "Insurance Charge" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.insuranceCharge })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  })] : []),
+                  ...(parseFloat(provider.stateSpecificCharge) > 0 ? [new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ children: [new TextRun({ text: "Kerala/NE Handling Charge" })] })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: provider.stateSpecificCharge })],
+                          alignment: AlignmentType.RIGHT 
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.SINGLE, size: 1 },
+                          bottom: { style: BorderStyle.SINGLE, size: 1 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  })] : []),
+                  // Total row
+                  new TableRow({
+                    children: [
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: "TOTAL", bold: true })],
+                          alignment: AlignmentType.CENTER
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.DOUBLE, size: 2 },
+                          bottom: { style: BorderStyle.DOUBLE, size: 2 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      }),
+                      new TableCell({
+                        children: [new Paragraph({ 
+                          children: [new TextRun({ text: `₹${provider.total}`, bold: true, color: "dc2626" })],
+                          alignment: AlignmentType.RIGHT
+                        })],
+                        borders: {
+                          top: { style: BorderStyle.DOUBLE, size: 2 },
+                          bottom: { style: BorderStyle.DOUBLE, size: 2 },
+                          left: { style: BorderStyle.SINGLE, size: 1 },
+                          right: { style: BorderStyle.SINGLE, size: 1 }
+                        }
+                      })
+                    ]
+                  })
+                ]
+              }),
+
+              // Additional Services Section
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: "ADDITIONAL SERVICES",
+                    bold: true,
+                    size: 28,
+                    color: "2563eb"
+                  })
+                ],
+                alignment: AlignmentType.CENTER,
+                spacing: { after: 300, before: 600 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Cash on Delivery: ${cod ? 'Yes' : 'No'}`,
+                    size: 20
+                  })
+                ],
+                spacing: { after: 150 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Holiday Delivery: ${holiday ? 'Yes' : 'No'}`,
+                    size: 20
+                  })
+                ],
+                spacing: { after: 150 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Outstation Delivery: ${outstation ? 'Yes' : 'No'}`,
+                    size: 20
+                  })
+                ],
+                spacing: { after: 400 }
+              }),
+
+              // Footer
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: "This quotation is valid for 30 days from the date of issue.",
+                    italics: true,
+                    size: 18,
+                    color: "6b7280"
+                  })
+                ],
+                alignment: AlignmentType.CENTER,
+                spacing: { before: 600 }
+              }),
+
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: `Generated on ${formattedDate} by Shipping Calculator`,
+                    italics: true,
+                    size: 16,
+                    color: "9ca3af"
+                  })
+                ],
+                alignment: AlignmentType.CENTER,
+                spacing: { before: 200 }
+              })
+            ]
+          }]
+        });
+
+        // Generate and download the document using blob method (browser-compatible)
+        const buffer = await Packer.toBlob(doc);
+        
+        // Create filename with vendor name and date
+        const timestamp = currentDate.toISOString().slice(0, 10);
+        const fileName = `Shipping_Quotation_${vendorName.trim().replace(/[^a-zA-Z0-9]/g, '_')}_${timestamp}.docx`;
+        
+        saveAs(buffer, fileName);
+        
+        alert(`Quotation document "${fileName}" has been downloaded successfully!`);
+        
+      } catch (docxError) {
+        console.warn('DOCX generation failed, falling back to HTML download:', docxError);
+        
+        // Fallback to HTML download if DOCX fails
+        const htmlContent = generateHTMLQuotation(
+          vendorName.trim(), 
+          provider, 
+          selectedState, 
+          boxes, 
+          totalPackages, 
+          totalWeight, 
+          formattedDate, 
+          cod, 
+          holiday, 
+          outstation
+        );
+        
+        const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+        const timestamp = currentDate.toISOString().slice(0, 10);
+        const fileName = `Shipping_Quotation_${vendorName.trim().replace(/[^a-zA-Z0-9]/g, '_')}_${timestamp}.html`;
+        
+        saveAs(blob, fileName);
+        
+        alert(`Quotation document "${fileName}" has been downloaded successfully! (HTML format - you can open this in any browser and print to PDF if needed)`);
       }
+
+      // Also save to database for record keeping
+      const selection = {
+        vendorName: vendorName.trim(),
+        providerName: provider.providerName,
+        total: parseFloat(provider.total),
+        date: new Date().toISOString().slice(0, 10)
+      };
+
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/selections/add`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(selection)
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          if (result.success) {
+            setSavedSelections(prev => [result.data, ...prev]);
+          }
+        }
+      } catch (error) {
+        console.error('Error saving to database:', error);
+        // Don't show error to user since the main functionality (download) worked
+      }
+
+      // Reset form
+      setSelectedProviderIdx(null);
+      setVendorName("");
+      
     } catch (error) {
-      console.error('Save error:', error);
-      let errorMessage = 'Failed to save selection. ';
+      console.error('Error creating document:', error);
+      let errorMessage = 'Failed to generate quotation document. ';
       
-      if (error.message.includes('Failed to fetch')) {
-        errorMessage += 'Please check if the backend server is running on port 5000.';
+      if (error.message.includes('nodebuffer') || error.message.includes('platform')) {
+        errorMessage += 'Browser compatibility issue detected. Please try refreshing the page and trying again.';
+      } else if (error.message.includes('network') || error.message.includes('fetch')) {
+        errorMessage += 'Please check your internet connection and try again.';
       } else {
-        errorMessage += error.message;
+        errorMessage += 'Please try again or contact support if the issue persists.';
       }
       
       alert(errorMessage);
@@ -641,11 +1437,7 @@ export default function Dashboard() {
         onClick={() => setAdvancedSettingsOpen(true)}
         title="Advanced Settings & Data Management"
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="12" r="1" fill="currentColor"/>
-          <circle cx="19" cy="12" r="1" fill="currentColor"/>
-          <circle cx="5" cy="12" r="1" fill="currentColor"/>
-        </svg>
+        <Settings size={24} />
       </button>
 
       <div className="dashboard-layout">
@@ -655,7 +1447,7 @@ export default function Dashboard() {
             <div className="form-header">
               <div className="header-main">
                 <h1 className="form-title">
-                  <span className="title-icon">📦</span>
+                  <Package size={28} className="title-icon" />
                   Shipping Calculator
                 </h1>
                 <p className="form-subtitle">Calculate optimal shipping costs across providers</p>
@@ -681,9 +1473,7 @@ export default function Dashboard() {
                     ))}
                   </select>
                   <div className="select-arrow">
-                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
-                      <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <ChevronDown size={12} />
                   </div>
                 </div>
               </div>
@@ -734,7 +1524,7 @@ export default function Dashboard() {
                 <div className="boxes-list">
                   {boxes.length === 0 ? (
                     <div className="empty-state">
-                      <div className="empty-icon">📦</div>
+                      <Package size={48} className="empty-icon" color="#94a3b8" />
                       <p className="empty-text">No packages added yet</p>
                       <p className="empty-subtext">Add your first package to get started</p>
                     </div>
@@ -761,19 +1551,14 @@ export default function Dashboard() {
                             onClick={() => openDuplicateBoxDialog(idx)}
                             title="Duplicate Package"
                           >
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" strokeWidth="2"/>
-                              <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" strokeWidth="2"/>
-                            </svg>
+                            <Copy size={16} />
                           </button>
                           <button
                             className="action-btn remove-btn"
                             onClick={() => handleRemoveBox(idx)}
                             title="Remove Package"
                           >
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                              <path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2m3 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6h14z" stroke="currentColor" strokeWidth="2"/>
-                            </svg>
+                            <Trash2 size={16} />
                           </button>
                         </div>
                       </div>
@@ -782,9 +1567,7 @@ export default function Dashboard() {
                 </div>
 
                 <button className="add-box-btn" onClick={openAddBoxDialog}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
+                  <Plus size={20} />
                   Add Package
                 </button>
               </div>
@@ -828,9 +1611,7 @@ export default function Dashboard() {
                 onClick={calculate}
                 disabled={!selectedState || boxes.length === 0}
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M9 11H3m3 8l-3-3 3-3m8-5l3 3-3 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+                <Calculator size={20} />
                 Calculate Shipping Costs
               </button>
             </div>
@@ -847,9 +1628,7 @@ export default function Dashboard() {
               disabled={savedSelections.length === 0}
               title="Export Provider Data"
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <Download size={20} />
             </button>
 
             <div className="results-header">
@@ -862,7 +1641,7 @@ export default function Dashboard() {
               <div className="vendor-form">
                 <div className="vendor-header">
                   <h4 className="vendor-title">
-                    Save Selection for <span className="provider-name">{results[selectedProviderIdx].providerName}</span>
+                    Generate Quotation for <span className="provider-name">{results[selectedProviderIdx].providerName}</span>
                   </h4>
                 </div>
                 <div className="vendor-input-group">
@@ -870,7 +1649,7 @@ export default function Dashboard() {
                     type="text"
                     value={vendorName}
                     onChange={e => setVendorName(e.target.value)}
-                    placeholder="Enter vendor name"
+                    placeholder="Enter vendor/customer name for quotation"
                     className="vendor-input"
                   />
                   <button
@@ -881,13 +1660,9 @@ export default function Dashboard() {
                     {loading ? (
                       <div className="spinner"></div>
                     ) : (
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" stroke="currentColor" strokeWidth="2"/>
-                        <polyline points="17,21 17,13 7,13 7,21" stroke="currentColor" strokeWidth="2"/>
-                        <polyline points="7,3 7,8 15,8" stroke="currentColor" strokeWidth="2"/>
-                      </svg>
+                      <Download size={16} />
                     )}
-                    {loading ? "Saving..." : "Save"}
+                    {loading ? "Generating..." : "Download Quotation"}
                   </button>
                 </div>
               </div>
@@ -897,7 +1672,7 @@ export default function Dashboard() {
             <div className="results-content">
               {results.length === 0 ? (
                 <div className="empty-results">
-                  <div className="empty-results-icon">🚚</div>
+                  <Truck size={48} className="empty-results-icon" color="#94a3b8" />
                   <h3 className="empty-results-title">No Results Yet</h3>
                   <p className="empty-results-text">
                     Select a state and add packages to compare shipping providers
@@ -984,9 +1759,7 @@ export default function Dashboard() {
                               handleProviderSelect(idx);
                             }}
                           >
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                              <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
+                            <Check size={16} />
                             Select This Provider
                           </button>
                         </div>

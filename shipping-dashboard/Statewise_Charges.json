@@ -1,0 +1,1982 @@
+[
+  {
+    "Provider ID": 1,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 1,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 1,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 1,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 1,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 1,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 1,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 1,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 1,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 1,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 1,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 1,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 1,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 1,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 1,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 1,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 1,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 1,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 1,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 1,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 1,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 1,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 1,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 1,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 1,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 1,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 1,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 1,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 1,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 1,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 1,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 1,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 1,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 2,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 2,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 2,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 2,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 2,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 2,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 2,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 2,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 2,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 2,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 2,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 2,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 2,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 2,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 2,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 2,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 2,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 2,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 2,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 2,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 2,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 2,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 2,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 2,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 2,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 2,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 2,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 2,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 2,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 2,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 2,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 2,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 2,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 3,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 11.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 10.5,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 9.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 9.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 10.5,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 3,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 4,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 4,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 4,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 4,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 4,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 4,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 4,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 4,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 4,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 4,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 4,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 4,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 4,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 4,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 4,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 4,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 4,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 4,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 4,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 4,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 4,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 4,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 4,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 4,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 4,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 4,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 4,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 4,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 4,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 4,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 4,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 4,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 4,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 5,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 5,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 5,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 5,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 5,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 5,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 5,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 5,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 5,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 5,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 5,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 5,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 5,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 5,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 5,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 5,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 5,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 5,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 5,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 5,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 5,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 5,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 5,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 5,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 5,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 5,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 5,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 5,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 5,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 5,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 5,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 5,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 5,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 6,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 6,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 6,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 6,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 6,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 6,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 6,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 6,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 6,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 6,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 6,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 6,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 6,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 6,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 6,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 6,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 6,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 6,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 6,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 7,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 7,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 7,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 7,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 7,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 7,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 7,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 7,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 7,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 7,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 7,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 7,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 7,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 7,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 7,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 7,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 7,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 7,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 7,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 7,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 7,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 7,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 7,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 7,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 7,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 7,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 7,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 7,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 7,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 7,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 7,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 7,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 7,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 8,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 8,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 8,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 8,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 8,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 8,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 8,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 8,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 8,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 8,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 8,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 8,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 8,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 8,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 8,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 8,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 8,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 8,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 8,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 8,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 8,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 8,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 8,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 8,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 8,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 8,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 9,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 9,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 9,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 9,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 9,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 9,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 9,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 9,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 9,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 9,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 9,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 9,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 9,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 9,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 9,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 9,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 9,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 27.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 9,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 9,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 9,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 9,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 9,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 9,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 9,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 9,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 9,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 9,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 36.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 9,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 9,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 9,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 9,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 9,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 9,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 10,
+    "State": "Andhra Pradesh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 10,
+    "State": "Arunachal Pradesh",
+    "Per Kilo Fee (INR)": 20.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 10,
+    "State": "Assam",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 10,
+    "State": "Bihar",
+    "Per Kilo Fee (INR)": 21.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 10,
+    "State": "Chhattisgarh",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 10,
+    "State": "Goa",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 10,
+    "State": "Gujarat",
+    "Per Kilo Fee (INR)": 29.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 10,
+    "State": "Haryana",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 10,
+    "State": "Himachal Pradesh",
+    "Per Kilo Fee (INR)": 22.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 10,
+    "State": "Jharkhand",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 14
+  },
+  {
+    "Provider ID": 10,
+    "State": "Karnataka",
+    "Per Kilo Fee (INR)": 38.0,
+    "Fuel Surcharge (%)": 8
+  },
+  {
+    "Provider ID": 10,
+    "State": "Kerala",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 10,
+    "State": "Madhya Pradesh",
+    "Per Kilo Fee (INR)": 34.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 10,
+    "State": "Maharashtra",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 12
+  },
+  {
+    "Provider ID": 10,
+    "State": "Manipur",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 10,
+    "State": "Meghalaya",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 10,
+    "State": "Mizoram",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 10,
+    "State": "Nagaland",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 10,
+    "State": "Odisha",
+    "Per Kilo Fee (INR)": 30.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 10,
+    "State": "Punjab",
+    "Per Kilo Fee (INR)": 25.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 10,
+    "State": "Rajasthan",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 10,
+    "State": "Sikkim",
+    "Per Kilo Fee (INR)": 39.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 10,
+    "State": "Tamil Nadu",
+    "Per Kilo Fee (INR)": 28.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 10,
+    "State": "Telangana",
+    "Per Kilo Fee (INR)": 26.0,
+    "Fuel Surcharge (%)": 9
+  },
+  {
+    "Provider ID": 10,
+    "State": "Tripura",
+    "Per Kilo Fee (INR)": 31.0,
+    "Fuel Surcharge (%)": 13
+  },
+  {
+    "Provider ID": 10,
+    "State": "Uttar Pradesh",
+    "Per Kilo Fee (INR)": 37.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 10,
+    "State": "Uttarakhand",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 15
+  },
+  {
+    "Provider ID": 10,
+    "State": "West Bengal",
+    "Per Kilo Fee (INR)": 23.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 10,
+    "State": "Delhi",
+    "Per Kilo Fee (INR)": 33.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 10,
+    "State": "Jammu and Kashmir",
+    "Per Kilo Fee (INR)": 40.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 10,
+    "State": "Ladakh",
+    "Per Kilo Fee (INR)": 32.0,
+    "Fuel Surcharge (%)": 11
+  },
+  {
+    "Provider ID": 10,
+    "State": "Chandigarh",
+    "Per Kilo Fee (INR)": 24.0,
+    "Fuel Surcharge (%)": 10
+  },
+  {
+    "Provider ID": 10,
+    "State": "Puducherry",
+    "Per Kilo Fee (INR)": 35.0,
+    "Fuel Surcharge (%)": 10
+  }
+]

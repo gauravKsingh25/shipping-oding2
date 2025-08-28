@@ -1289,7 +1289,7 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
   };
 
   // Add function to handle data updates from advanced settings
-  const handleDataUpdate = async (dataType, newData) => {
+  const handleDataUpdate = useCallback(async (dataType, newData) => {
     // Validate that newData is an array and has the correct structure
     if (!Array.isArray(newData) || newData.length === 0) {
       console.error('Invalid data provided for update:', dataType);
@@ -1370,23 +1370,42 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
       const result = await response.json();
       
       if (result.success) {
-        // Update local state after successful API call
+        // Update local state after successful API call with proper state updates
         switch (dataType) {
           case 'providers':
-            setProviders(newData);
+            setProviders([...newData]); // Use spread to ensure new reference
             localStorage.setItem('customProviders', JSON.stringify(newData));
             console.log(`Updated ${newData.length} provider records`);
             break;
           case 'states':
-            // Transform the statewise charges data and extract unique states
-            setStatewiseCharges(newData);
-            const uniqueStates = [...new Set(newData.map(s => s.State))].sort();
-            setStates(uniqueStates);
-            localStorage.setItem('customStates', JSON.stringify(newData));
-            console.log(`Updated ${newData.length} state charge records`);
-            break;
+              // After bulk update, reload from backend to get correct _id fields
+              try {
+                const response = await fetch(`${API_BASE_URL}/api/charges/statewise`);
+                if (response.ok) {
+                  const statewiseChargesData = await response.json();
+                  setStatewiseCharges(statewiseChargesData.map(s => ({
+                    _id: s._id,
+                    "Provider ID": s.providerId,
+                    "Provider Name": s.providerName,
+                    "State": s.state,
+                    "Per Kilo Fee (INR)": s.perKiloFee,
+                    "Fuel Surcharge (%)": s.fuelSurcharge
+                  })));
+                  const uniqueStates = [...new Set(statewiseChargesData.map(s => s.state))].sort();
+                  setStates(uniqueStates);
+                  localStorage.setItem('customStates', JSON.stringify(statewiseChargesData));
+                  console.log(`Reloaded ${statewiseChargesData.length} state charge records`);
+                } else {
+                  setStatewiseCharges([]);
+                  setStates([]);
+                }
+              } catch (err) {
+                setStatewiseCharges([]);
+                setStates([]);
+              }
+              break;
           case 'fixed':
-            setFixedCharges(newData);
+            setFixedCharges([...newData]); // Use spread to ensure new reference
             localStorage.setItem('customFixedCharges', JSON.stringify(newData));
             console.log(`Updated ${newData.length} fixed charge records`);
             break;
@@ -1400,8 +1419,10 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
         setSelectedProviderIdx(null);
         setSelectedState(""); // Reset state selection to force user to reselect
         
-        // Show success message
-        alert(`Successfully updated ${dataType} data with ${newData.length} records. Database has been updated. Please reselect your state and recalculate.`);
+        // Show success message only for bulk updates, not individual row updates
+        if (newData.length > 1) {
+          alert(`Successfully updated ${dataType} data with ${newData.length} records. Database has been updated. Please reselect your state and recalculate.`);
+        }
       } else {
         throw new Error(result.error || 'Failed to update data');
       }
@@ -1420,7 +1441,7 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
     } finally {
       setLoading(false);
     }
-  };
+  }, [API_BASE_URL]);
 
   return (
     <div className="dashboard-container">

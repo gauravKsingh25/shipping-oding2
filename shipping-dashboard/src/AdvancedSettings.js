@@ -70,6 +70,15 @@ export default function AdvancedSettings({
     }
   }, [isOpen]);
 
+  // Force re-render when data changes to ensure UI consistency
+  React.useEffect(() => {
+    // Reset edit states when data changes to prevent stale state issues
+    setEditingRowIndex(null);
+    setEditingData({});
+    setShowCreateRow(false);
+    setNewRowData({});
+  }, [providers, states, fixedCharges, activeTab]);
+
   // Edit mode states
   const [editingRowIndex, setEditingRowIndex] = useState(null);
   const [editingData, setEditingData] = useState({});
@@ -124,15 +133,15 @@ export default function AdvancedSettings({
     }
   };
 
-  // Get current data based on active tab
-  const getCurrentData = () => {
+  // Get current data based on active tab - using useCallback to ensure fresh data
+  const getCurrentData = React.useCallback(() => {
     switch (activeTab) {
       case 'providers': return providers || [];
       case 'states': return states || []; // This is actually statewiseCharges from Dashboard
       case 'fixed': return fixedCharges || [];
       default: return [];
     }
-  };
+  }, [activeTab, providers, states, fixedCharges]);
 
   // Helper functions for edit mode
   const startEdit = (rowIndex) => {
@@ -212,17 +221,26 @@ export default function AdvancedSettings({
       const result = await response.json();
       
       if (result.success) {
-        // Update local data
-        const updatedData = [...currentData];
-        updatedData[editingRowIndex] = { ...editingData };
+        // Get fresh data after API call to ensure consistency
+        const freshCurrentData = getCurrentData();
+        const updatedData = [...freshCurrentData];
+        
+        // Merge the edited data with any additional fields that might have been returned from API
+        updatedData[editingRowIndex] = { 
+          ...originalRow, // Keep original fields (like _id, etc.)
+          ...editingData, // Apply the edited changes
+          ...(result.data || {}) // Apply any additional data returned from API
+        };
         
         // Update parent component data
         onDataUpdate(activeTab, updatedData);
         
         setUploadStatus('✅ Changes saved successfully!');
         
-        // Reset edit state
-        cancelEdit();
+        // Reset edit state after a short delay to ensure state update is complete
+        setTimeout(() => {
+          cancelEdit();
+        }, 100);
         
         // Clear status after delay
         setTimeout(() => setUploadStatus(''), 3000);
@@ -271,8 +289,6 @@ export default function AdvancedSettings({
   };
 
   const saveNewRow = async () => {
-    const currentData = getCurrentData();
-    
     try {
       setIsUploading(true);
       setUploadStatus('🆕 Creating new row...');
@@ -332,16 +348,27 @@ export default function AdvancedSettings({
       const result = await response.json();
       
       if (result.success) {
+        // Get fresh data to ensure we have the latest state
+        const freshCurrentData = getCurrentData();
+        
+        // Create the new row data with API response data (if any) and form data
+        const newRowWithApiData = {
+          ...newRowData, // Form data
+          ...(result.data || {}) // API response data (like auto-generated IDs)
+        };
+        
         // Add to local data
-        const updatedData = [...currentData, { ...newRowData }];
+        const updatedData = [...freshCurrentData, newRowWithApiData];
         
         // Update parent component data
         onDataUpdate(activeTab, updatedData);
         
         setUploadStatus('✅ New row created successfully!');
         
-        // Reset create state
-        cancelCreateRow();
+        // Reset create state after a short delay to ensure state update is complete
+        setTimeout(() => {
+          cancelCreateRow();
+        }, 100);
         
         // Clear status after delay
         setTimeout(() => setUploadStatus(''), 3000);
@@ -406,13 +433,21 @@ export default function AdvancedSettings({
       const result = await response.json();
       
       if (result.success) {
+        // Get fresh data to ensure we have the latest state
+        const freshCurrentData = getCurrentData();
+        
         // Remove from local data
-        const updatedData = currentData.filter((_, index) => index !== rowIndex);
+        const updatedData = freshCurrentData.filter((_, index) => index !== rowIndex);
         
         // Update parent component data
         onDataUpdate(activeTab, updatedData);
         
         setUploadStatus('✅ Row deleted successfully!');
+        
+        // Reset any edit states if we were editing the deleted row
+        if (editingRowIndex === rowIndex) {
+          cancelEdit();
+        }
         
         // Clear status after delay
         setTimeout(() => setUploadStatus(''), 3000);

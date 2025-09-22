@@ -1,0 +1,3711 @@
+{
+  "metadata": {
+    "source_file": "/mnt/data/transport rate1.xlsx",
+    "num_data_rows": 72,
+    "detected_header_rows": [
+      0
+    ],
+    "final_columns": [
+      "1",
+      "andhra pradesh",
+      "gatti cargo",
+      "fix charges",
+      "unnamed",
+      "depee world",
+      "fix charges__1",
+      "unnamed__1",
+      "track on courier",
+      "unnamed__2",
+      "unnamed__3",
+      "track on courier by air rate",
+      "unnamed__4",
+      "dtdc courier rates",
+      "unnamed__5",
+      "dtdc courier rates by air",
+      "rest of india",
+      "unnamed__6",
+      "tci transport",
+      "unnamed__7",
+      "dtdc express cargo",
+      "unnamed__8",
+      "v trans",
+      "unnamed__9",
+      "vision logistics",
+      "unnamed__10",
+      "safexpress",
+      "green tax safexpress",
+      "unnamed__11"
+    ],
+    "inferred_mapping": {
+      "courier_col": "track on courier",
+      "state_col": "gatti cargo",
+      "charge_col": "tci transport",
+      "tax_col": "green tax safexpress",
+      "other_col": null
+    }
+  },
+  "couriers": {
+    "UNKNOWN_COURIER": {
+      "states": {
+        "UNKNOWN_STATE": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 0,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 2,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 15,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Bengloor",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 29,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Hydrabad",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 49,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Chenai ",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 140,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 10.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 50,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Kolkatta",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 140,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 11,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 11.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 51,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Hydrabad",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 140,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 11.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 52,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Mumbai",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 140,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 7.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 10.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 53,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Bengloor",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 140,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 10.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 54,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Ahmedabad",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 46,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 140,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 6.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": 10.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 55,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "Pune",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": null,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 56,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 66,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 69,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 70,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 8,
+                "median_charge": 10.0,
+                "mean_charge": 10.375,
+                "min_charge": 10.0,
+                "max_charge": 11.0,
+                "anomalies": [
+                  {
+                    "row": 0,
+                    "charge": null,
+                    "reasons": [
+                      "missing_charge"
+                    ]
+                  },
+                  {
+                    "row": 2,
+                    "charge": null,
+                    "reasons": [
+                      "missing_charge"
+                    ]
+                  },
+                  {
+                    "row": 55,
+                    "charge": null,
+                    "reasons": [
+                      "missing_charge"
+                    ]
+                  },
+                  {
+                    "row": 56,
+                    "charge": null,
+                    "reasons": [
+                      "missing_charge"
+                    ]
+                  },
+                  {
+                    "row": 66,
+                    "charge": null,
+                    "reasons": [
+                      "missing_charge"
+                    ]
+                  },
+                  {
+                    "row": 69,
+                    "charge": null,
+                    "reasons": [
+                      "missing_charge"
+                    ]
+                  },
+                  {
+                    "row": 70,
+                    "charge": null,
+                    "reasons": [
+                      "missing_charge"
+                    ]
+                  }
+                ],
+                "median_tax": 100.0
+              }
+            }
+          }
+        },
+        "120": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 36,
+                  "raw_row": {
+                    "1": 31,
+                    "andhra pradesh": "Port Blair",
+                    "gatti cargo": 120,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 32,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": 100,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": "120",
+                  "charge": 32.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 32.0,
+                "mean_charge": 32.0,
+                "min_charge": 32.0,
+                "max_charge": 32.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "50": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 57,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "DOCKET CHARGES",
+                    "gatti cargo": 50,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 50,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 150,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 50,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 50,
+                    "unnamed__8": null,
+                    "v trans": 50,
+                    "unnamed__9": null,
+                    "vision logistics": 50,
+                    "unnamed__10": null,
+                    "safexpress": 100,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": "50",
+                  "charge": 50.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 50.0,
+                "mean_charge": 50.0,
+                "min_charge": 50.0,
+                "max_charge": 50.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "100": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 58,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "FOV",
+                    "gatti cargo": 100,
+                    "fix charges": "MINIMUM OR 0.1%(100000)",
+                    "unnamed": null,
+                    "depee world": 100,
+                    "fix charges__1": "MINIMUM OR 0.1%(100000)",
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 0.001,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 100,
+                    "unnamed__8": null,
+                    "v trans": 0.0001,
+                    "unnamed__9": null,
+                    "vision logistics": 0.0001,
+                    "unnamed__10": "100 MINI ",
+                    "safexpress": 0.001,
+                    "green tax safexpress": 100,
+                    "unnamed__11": "MINI "
+                  },
+                  "courier": null,
+                  "state": "100",
+                  "charge": 0.001,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 61,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "GREENT TAX",
+                    "gatti cargo": 100,
+                    "fix charges": "FOR DELHI ONLY",
+                    "unnamed": null,
+                    "depee world": "NIL",
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 100,
+                    "unnamed__7": "GREEN TAX DELHI NCR (GURUGRAM AND NOIDIA)",
+                    "dtdc express cargo": "NIL",
+                    "unnamed__8": null,
+                    "v trans": 0,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": "100",
+                  "charge": 100.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 2,
+                "median_charge": 50.0005,
+                "mean_charge": 50.0005,
+                "min_charge": 0.001,
+                "max_charge": 100.0,
+                "anomalies": [
+                  {
+                    "row": 58,
+                    "charge": 0.001,
+                    "reasons": [
+                      "near_zero_charge"
+                    ]
+                  }
+                ],
+                "median_tax": 100.0
+              }
+            }
+          }
+        },
+        "6": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 62,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "CFT",
+                    "gatti cargo": 6,
+                    "fix charges": "PER KG",
+                    "unnamed": "L*W*H/27000",
+                    "depee world": 6,
+                    "fix charges__1": "L*W*H/4500",
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": "L*W*H/4750",
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": "L*W*H/1728*7 CFT 6",
+                    "unnamed__7": null,
+                    "dtdc express cargo": "L*B*H /27000 CFT 6",
+                    "unnamed__8": null,
+                    "v trans": "CFT 6 L*B*H/27000",
+                    "unnamed__9": null,
+                    "vision logistics": "20 KG MINI WEIGHT 450/- MIN DOC",
+                    "unnamed__10": null,
+                    "safexpress": "400/- MIN WEIGHT 20 KGS",
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": "6",
+                  "charge": 172876.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 172876.0,
+                "mean_charge": 172876.0,
+                "min_charge": 172876.0,
+                "max_charge": 172876.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "15": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 63,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "MINI CHARGES WT",
+                    "gatti cargo": 15,
+                    "fix charges": "KGS",
+                    "unnamed": null,
+                    "depee world": 20,
+                    "fix charges__1": "KGS",
+                    "unnamed__1": "300 MINIMUM BILITY CHARGES",
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": "3KGS",
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": "25 KGS MILI DOCKET CHARGES 300/)",
+                    "unnamed__8": null,
+                    "v trans": "30 KGS MINI FREIGT 500/-",
+                    "unnamed__9": null,
+                    "vision logistics": "L*B*H/27000   CFT 6",
+                    "unnamed__10": null,
+                    "safexpress": "L*B*H/27000 CFT 6",
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": "15",
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 0
+              }
+            }
+          }
+        },
+        "400": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 65,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "SUNDAY HOLIDAY CHARGES",
+                    "gatti cargo": 400,
+                    "fix charges": "PER DOCKET FOR DELIVERY",
+                    "unnamed": null,
+                    "depee world": 150,
+                    "fix charges__1": "PER DOCKET FOR DELIVERY",
+                    "unnamed__1": null,
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": "250/ MINI PER DOCKET OF 10KGS",
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": "400",
+                  "charge": 25010.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 25010.0,
+                "mean_charge": 25010.0,
+                "min_charge": 25010.0,
+                "max_charge": 25010.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "TO HIGH": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 67,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "ODA",
+                    "gatti cargo": "TO HIGH",
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 3,
+                    "fix charges__1": "PER KG ",
+                    "unnamed__1": "(500 WHICH EVERY IS HIGHER 168 KGS)",
+                    "track on courier": null,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": "ODA EXTRA",
+                    "unnamed__7": null,
+                    "dtdc express cargo": "ODA ",
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": "350 PUNJAB HARYANA OTHER 750/0",
+                    "unnamed__10": null,
+                    "safexpress": 1200,
+                    "green tax safexpress": "ODA EVERY LOCATION",
+                    "unnamed__11": null
+                  },
+                  "courier": null,
+                  "state": "TO HIGH",
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "TRACK ON COURIER": {
+      "states": {
+        "Gatti Cargo": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 1,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": "Gatti Cargo",
+                    "fix charges": "FIX CHARGES",
+                    "unnamed": null,
+                    "depee world": "DEPEE WORLD",
+                    "fix charges__1": "FIX CHARGES",
+                    "unnamed__1": null,
+                    "track on courier": "TRACK ON COURIER",
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": "TRACK ON COURIER BY AIR RATE",
+                    "unnamed__4": null,
+                    "dtdc courier rates": "DTDC COURIER RATES",
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": "DTDC COURIER RATES BY AIR",
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": "TCI TRANSPORT",
+                    "unnamed__7": null,
+                    "dtdc express cargo": "DTDC EXPRESS CARGO",
+                    "unnamed__8": null,
+                    "v trans": "V TRANS",
+                    "unnamed__9": null,
+                    "vision logistics": "VISION LOGISTICS",
+                    "unnamed__10": null,
+                    "safexpress": "SAFEXPRESS",
+                    "green tax safexpress": "GREEN TAX SAFEXPRESS",
+                    "unnamed__11": null
+                  },
+                  "courier": "TRACK ON COURIER",
+                  "state": "Gatti Cargo",
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "45": {
+      "states": {
+        "9.3": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 3,
+                  "raw_row": {
+                    "1": 1,
+                    "andhra pradesh": "Andhra Pradesh",
+                    "gatti cargo": 9.3,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 11,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 156,
+                    "rest of india": "REST OF INDIA",
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "9.3",
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 28,
+                  "raw_row": {
+                    "1": 24,
+                    "andhra pradesh": "Telangana/Hydrabad",
+                    "gatti cargo": 9.3,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 11,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": 130,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "9.3",
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 2,
+                "median_charge": 11.0,
+                "mean_charge": 11.0,
+                "min_charge": 11.0,
+                "max_charge": 11.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "17": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 4,
+                  "raw_row": {
+                    "1": 2,
+                    "andhra pradesh": "Arunachal Pradesh",
+                    "gatti cargo": 17,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": 210,
+                    "rest of india": "REST NORTH EAST",
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 21,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "17",
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 25.0,
+                "mean_charge": 25.0,
+                "min_charge": 25.0,
+                "max_charge": 25.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "11": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 6,
+                  "raw_row": {
+                    "1": 4,
+                    "andhra pradesh": "Bihar",
+                    "gatti cargo": 11,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 10.5,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 14,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 11,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "11",
+                  "charge": 14.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 13,
+                  "raw_row": {
+                    "1": 10,
+                    "andhra pradesh": "Jharkhand",
+                    "gatti cargo": 11,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 10.5,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 14,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 11,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "11",
+                  "charge": 14.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 2,
+                "median_charge": 14.0,
+                "mean_charge": 14.0,
+                "min_charge": 14.0,
+                "max_charge": 14.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "8.5": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 7,
+                  "raw_row": {
+                    "1": 5,
+                    "andhra pradesh": "Chhattisgarh",
+                    "gatti cargo": 8.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 13,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "8.5",
+                  "charge": 13.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 9,
+                  "raw_row": {
+                    "1": 7,
+                    "andhra pradesh": "Gujarat",
+                    "gatti cargo": 8.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 6.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "8.5",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 37,
+                  "raw_row": {
+                    "1": 32,
+                    "andhra pradesh": "Daman & Diu ",
+                    "gatti cargo": 8.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 6.5,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "8.5",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 38,
+                  "raw_row": {
+                    "1": 33,
+                    "andhra pradesh": "Dadra and Nagar Haveli",
+                    "gatti cargo": 8.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 45,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 6.5,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "45",
+                  "state": "8.5",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 4,
+                "median_charge": 10.0,
+                "mean_charge": 10.75,
+                "min_charge": 10.0,
+                "max_charge": 13.0,
+                "anomalies": [
+                  {
+                    "row": 7,
+                    "charge": 13.0,
+                    "reasons": [
+                      "iqr_outlier"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "70": {
+      "states": {
+        "17": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 5,
+                  "raw_row": {
+                    "1": 3,
+                    "andhra pradesh": "Assam",
+                    "gatti cargo": 17,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 15,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 70,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 17,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 21,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "17",
+                  "charge": 17.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 17.0,
+                "mean_charge": 17.0,
+                "min_charge": 17.0,
+                "max_charge": 17.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "18": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 19,
+                  "raw_row": {
+                    "1": 15,
+                    "andhra pradesh": "Manipur",
+                    "gatti cargo": 18,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 75,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "18",
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 20,
+                  "raw_row": {
+                    "1": 16,
+                    "andhra pradesh": "Meghalaya",
+                    "gatti cargo": 18,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 75,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "18",
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 21,
+                  "raw_row": {
+                    "1": 17,
+                    "andhra pradesh": "Mizoram",
+                    "gatti cargo": 18,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 75,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "18",
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 22,
+                  "raw_row": {
+                    "1": 18,
+                    "andhra pradesh": "Nagaland",
+                    "gatti cargo": 18,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 75,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 0,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "18",
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 30,
+                  "raw_row": {
+                    "1": 25,
+                    "andhra pradesh": "Tripura",
+                    "gatti cargo": 18,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 75,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "18",
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 5,
+                "median_charge": 25.0,
+                "mean_charge": 25.0,
+                "min_charge": 25.0,
+                "max_charge": 25.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "11": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 26,
+                  "raw_row": {
+                    "1": 22,
+                    "andhra pradesh": "Sikkim",
+                    "gatti cargo": 11,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 70,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "11",
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 25.0,
+                "mean_charge": 25.0,
+                "min_charge": 25.0,
+                "max_charge": 25.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "15": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 34,
+                  "raw_row": {
+                    "1": 29,
+                    "andhra pradesh": "Kashmir and srinagar",
+                    "gatti cargo": 15,
+                    "fix charges": "100/-",
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 33,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 13,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6.5,
+                    "unnamed__8": null,
+                    "v trans": 10,
+                    "unnamed__9": null,
+                    "vision logistics": 25,
+                    "unnamed__10": null,
+                    "safexpress": 13,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": "15",
+                  "charge": 13.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 13.0,
+                "mean_charge": 13.0,
+                "min_charge": 13.0,
+                "max_charge": 13.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "UNKNOWN_STATE": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 44,
+                  "raw_row": {
+                    "1": 39,
+                    "andhra pradesh": "AGARATALA",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 11,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": null,
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 45,
+                  "raw_row": {
+                    "1": 40,
+                    "andhra pradesh": "IMPHAL",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": null,
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 46,
+                  "raw_row": {
+                    "1": 41,
+                    "andhra pradesh": "SILCHAR",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 17,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 31,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": null,
+                  "charge": 17.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 47,
+                  "raw_row": {
+                    "1": 42,
+                    "andhra pradesh": "JORHAT",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 70,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 25,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": 21,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "70",
+                  "state": null,
+                  "charge": 25.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 4,
+                "median_charge": 25.0,
+                "mean_charge": 23.0,
+                "min_charge": 17.0,
+                "max_charge": 25.0,
+                "anomalies": [
+                  {
+                    "row": 46,
+                    "charge": 17.0,
+                    "reasons": [
+                      "iqr_outlier"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "50": {
+      "states": {
+        "8.5": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 8,
+                  "raw_row": {
+                    "1": 6,
+                    "andhra pradesh": "Goa",
+                    "gatti cargo": 8.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "8.5",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 17,
+                  "raw_row": {
+                    "1": 13,
+                    "andhra pradesh": "Madhya Pradesh",
+                    "gatti cargo": 8.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "8.5",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 18,
+                  "raw_row": {
+                    "1": 14,
+                    "andhra pradesh": "Maharashtra",
+                    "gatti cargo": 8.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 7.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "8.5",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 3,
+                "median_charge": 10.0,
+                "mean_charge": 10.0,
+                "min_charge": 10.0,
+                "max_charge": 10.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "9.3": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 14,
+                  "raw_row": {
+                    "1": 11,
+                    "andhra pradesh": "Karnataka",
+                    "gatti cargo": 9.3,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 11,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "9.3",
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 11.0,
+                "mean_charge": 11.0,
+                "min_charge": 11.0,
+                "max_charge": 11.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "9.5": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 16,
+                  "raw_row": {
+                    "1": 12,
+                    "andhra pradesh": "Kerala",
+                    "gatti cargo": 9.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 12,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 14,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 12,
+                    "unnamed__8": null,
+                    "v trans": 9.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "9.5",
+                  "charge": 14.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 27,
+                  "raw_row": {
+                    "1": 23,
+                    "andhra pradesh": "Tamil Nadu",
+                    "gatti cargo": 9.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 11,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "9.5",
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 39,
+                  "raw_row": {
+                    "1": 34,
+                    "andhra pradesh": "Ponducherry",
+                    "gatti cargo": 9.5,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 12,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 9,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "9.5",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 41,
+                  "raw_row": {
+                    "1": 36,
+                    "andhra pradesh": "KERLA",
+                    "gatti cargo": 9.5,
+                    "fix charges": "100/-",
+                    "unnamed": "PER DOCKET",
+                    "depee world": 12,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": 150,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 14,
+                    "unnamed__7": "15/- PER BOX HANDLING CHARGES",
+                    "dtdc express cargo": 12,
+                    "unnamed__8": "5/-PER BOX ",
+                    "v trans": 9.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "9.5",
+                  "charge": 14.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 4,
+                "median_charge": 12.5,
+                "mean_charge": 12.25,
+                "min_charge": 10.0,
+                "max_charge": 14.0,
+                "anomalies": [],
+                "median_tax": 100.0
+              }
+            }
+          }
+        },
+        "11": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 23,
+                  "raw_row": {
+                    "1": 19,
+                    "andhra pradesh": "Odisha",
+                    "gatti cargo": 11,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 10.5,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 14,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 11,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 24,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "11",
+                  "charge": 14.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 33,
+                  "raw_row": {
+                    "1": 28,
+                    "andhra pradesh": "West Bengal",
+                    "gatti cargo": 11,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 10.5,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 11,
+                    "unnamed__8": null,
+                    "v trans": 8.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 13.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": "11",
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 2,
+                "median_charge": 12.5,
+                "mean_charge": 12.5,
+                "min_charge": 11.0,
+                "max_charge": 14.0,
+                "anomalies": []
+              }
+            }
+          }
+        },
+        "UNKNOWN_STATE": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 42,
+                  "raw_row": {
+                    "1": 37,
+                    "andhra pradesh": "COIMBOTORE",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 12,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 10,
+                    "unnamed__8": null,
+                    "v trans": 9.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": null,
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 43,
+                  "raw_row": {
+                    "1": 38,
+                    "andhra pradesh": "SILIGURI",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 27,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 11,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 15,
+                    "unnamed__8": null,
+                    "v trans": 11,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 10.75,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": null,
+                  "charge": 11.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 48,
+                  "raw_row": {
+                    "1": 43,
+                    "andhra pradesh": "NASIK",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 50,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 56,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 9,
+                    "unnamed__8": null,
+                    "v trans": 7.5,
+                    "unnamed__9": null,
+                    "vision logistics": 22,
+                    "unnamed__10": null,
+                    "safexpress": 8.5,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "50",
+                  "state": null,
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 3,
+                "median_charge": 11.0,
+                "mean_charge": 10.666666666666666,
+                "min_charge": 10.0,
+                "max_charge": 11.0,
+                "anomalies": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "15": {
+      "states": {
+        "5.6": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 10,
+                  "raw_row": {
+                    "1": 8,
+                    "andhra pradesh": "Haryana",
+                    "gatti cargo": 5.6,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 6,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 15,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 15,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 8,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6,
+                    "unnamed__8": null,
+                    "v trans": 5.5,
+                    "unnamed__9": null,
+                    "vision logistics": 10,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "15",
+                  "state": "5.6",
+                  "charge": 8.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 24,
+                  "raw_row": {
+                    "1": 20,
+                    "andhra pradesh": "Punjab",
+                    "gatti cargo": 5.6,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 6,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 15,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 15,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 8,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6,
+                    "unnamed__8": null,
+                    "v trans": 5.5,
+                    "unnamed__9": null,
+                    "vision logistics": 10,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "15",
+                  "state": "5.6",
+                  "charge": 8.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 2,
+                "median_charge": 8.0,
+                "mean_charge": 8.0,
+                "min_charge": 8.0,
+                "max_charge": 8.0,
+                "anomalies": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "20": {
+      "states": {
+        "UNKNOWN_STATE": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 11,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "GURUGRAM",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 20,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 33,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 7,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6,
+                    "unnamed__8": null,
+                    "v trans": 5.5,
+                    "unnamed__9": null,
+                    "vision logistics": 10,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": "20",
+                  "state": null,
+                  "charge": 7.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 7.0,
+                "mean_charge": 7.0,
+                "min_charge": 7.0,
+                "max_charge": 7.0,
+                "anomalies": [],
+                "median_tax": 100.0
+              }
+            }
+          }
+        },
+        "5.6": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 40,
+                  "raw_row": {
+                    "1": 35,
+                    "andhra pradesh": "DELHI",
+                    "gatti cargo": 5.6,
+                    "fix charges": "75/",
+                    "unnamed": "PER DOCKET",
+                    "depee world": 6,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 20,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 33,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 7,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6,
+                    "unnamed__8": null,
+                    "v trans": 4.5,
+                    "unnamed__9": null,
+                    "vision logistics": 10,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": 100,
+                    "unnamed__11": null
+                  },
+                  "courier": "20",
+                  "state": "5.6",
+                  "charge": 7.0,
+                  "tax": 100.0,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 7.0,
+                "mean_charge": 7.0,
+                "min_charge": 7.0,
+                "max_charge": 7.0,
+                "anomalies": [],
+                "median_tax": 100.0
+              }
+            }
+          }
+        }
+      }
+    },
+    "25": {
+      "states": {
+        "5.6": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 12,
+                  "raw_row": {
+                    "1": 9,
+                    "andhra pradesh": "Himachal Pradesh",
+                    "gatti cargo": 5.6,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 25,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 15,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6.5,
+                    "unnamed__8": null,
+                    "v trans": 5.5,
+                    "unnamed__9": null,
+                    "vision logistics": 15,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "25",
+                  "state": "5.6",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 10.0,
+                "mean_charge": 10.0,
+                "min_charge": 10.0,
+                "max_charge": 10.0,
+                "anomalies": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "35": {
+      "states": {
+        "5.6": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 25,
+                  "raw_row": {
+                    "1": 21,
+                    "andhra pradesh": "Rajasthan",
+                    "gatti cargo": 5.6,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 6,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 35,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 33,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 8,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6,
+                    "unnamed__8": null,
+                    "v trans": 5.5,
+                    "unnamed__9": null,
+                    "vision logistics": 15,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "35",
+                  "state": "5.6",
+                  "charge": 8.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 31,
+                  "raw_row": {
+                    "1": 26,
+                    "andhra pradesh": "Uttar Pradesh",
+                    "gatti cargo": 5.6,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 6,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 35,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 33,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 8,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6,
+                    "unnamed__8": null,
+                    "v trans": 5.5,
+                    "unnamed__9": null,
+                    "vision logistics": 15,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "35",
+                  "state": "5.6",
+                  "charge": 8.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 32,
+                  "raw_row": {
+                    "1": 27,
+                    "andhra pradesh": "Uttarakhand",
+                    "gatti cargo": 5.6,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 6,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 35,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 33,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6,
+                    "unnamed__8": null,
+                    "v trans": 5.5,
+                    "unnamed__9": null,
+                    "vision logistics": 15,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "35",
+                  "state": "5.6",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                },
+                {
+                  "_row_index": 35,
+                  "raw_row": {
+                    "1": 30,
+                    "andhra pradesh": "Jammu",
+                    "gatti cargo": 5.6,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 9,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 35,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 33,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 10,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 6.5,
+                    "unnamed__8": null,
+                    "v trans": 4.25,
+                    "unnamed__9": null,
+                    "vision logistics": 20,
+                    "unnamed__10": null,
+                    "safexpress": 7,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "35",
+                  "state": "5.6",
+                  "charge": 10.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 4,
+                "median_charge": 9.0,
+                "mean_charge": 9.0,
+                "min_charge": 8.0,
+                "max_charge": 10.0,
+                "anomalies": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "300": {
+      "states": {
+        "50": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 59,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "COD",
+                    "gatti cargo": 50,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 100,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 300,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 150,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 100,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 100,
+                    "unnamed__8": null,
+                    "v trans": 75,
+                    "unnamed__9": null,
+                    "vision logistics": 150,
+                    "unnamed__10": null,
+                    "safexpress": 250,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "300",
+                  "state": "50",
+                  "charge": 100.0,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 100.0,
+                "mean_charge": 100.0,
+                "min_charge": 100.0,
+                "max_charge": 100.0,
+                "anomalies": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "0.2": {
+      "states": {
+        "0.15": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 60,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "FUEL",
+                    "gatti cargo": 0.15,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 0.15,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 0.2,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 0.15,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 0.18,
+                    "unnamed__7": null,
+                    "dtdc express cargo": 0.1,
+                    "unnamed__8": null,
+                    "v trans": 0.05,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": 0.2,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "0.2",
+                  "state": "0.15",
+                  "charge": 0.18,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 0.18,
+                "mean_charge": 0.18,
+                "min_charge": 0.18,
+                "max_charge": 0.18,
+                "anomalies": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "100": {
+      "states": {
+        "UNKNOWN_STATE": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 64,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "E-WAY BILL ABOVE 50000/-",
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 100,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 200,
+                    "unnamed__5": "up to 2lakh",
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": null,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "100",
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "0.18": {
+      "states": {
+        "0.18": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 68,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": "GST",
+                    "gatti cargo": 0.18,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": 0.18,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": 0.18,
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": 0.18,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": 0.18,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": 0.12,
+                    "unnamed__9": null,
+                    "vision logistics": 18,
+                    "unnamed__10": null,
+                    "safexpress": 0.18,
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "0.18",
+                  "state": "0.18",
+                  "charge": 0.18,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 1,
+                "median_charge": 0.18,
+                "mean_charge": 0.18,
+                "min_charge": 0.18,
+                "max_charge": 0.18,
+                "anomalies": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "PRIME TRACK COURIER  150/-": {
+      "states": {
+        "UNKNOWN_STATE": {
+          "conditions": {
+            "default": {
+              "entries": [
+                {
+                  "_row_index": 71,
+                  "raw_row": {
+                    "1": null,
+                    "andhra pradesh": null,
+                    "gatti cargo": null,
+                    "fix charges": null,
+                    "unnamed": null,
+                    "depee world": null,
+                    "fix charges__1": null,
+                    "unnamed__1": null,
+                    "track on courier": "PRIME TRACK COURIER  150/- ",
+                    "unnamed__2": null,
+                    "unnamed__3": null,
+                    "track on courier by air rate": null,
+                    "unnamed__4": null,
+                    "dtdc courier rates": null,
+                    "unnamed__5": null,
+                    "dtdc courier rates by air": null,
+                    "rest of india": null,
+                    "unnamed__6": null,
+                    "tci transport": null,
+                    "unnamed__7": null,
+                    "dtdc express cargo": null,
+                    "unnamed__8": null,
+                    "v trans": null,
+                    "unnamed__9": null,
+                    "vision logistics": null,
+                    "unnamed__10": null,
+                    "safexpress": "ANNUAL HICK 7% EVERY YEAR",
+                    "green tax safexpress": null,
+                    "unnamed__11": null
+                  },
+                  "courier": "PRIME TRACK COURIER  150/-",
+                  "state": null,
+                  "charge": null,
+                  "tax": null,
+                  "other_charges": null,
+                  "conditions": {
+                    "type": "default"
+                  }
+                }
+              ],
+              "summary": {
+                "count_charge_rows": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

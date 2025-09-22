@@ -63,12 +63,14 @@ mongoose.connect(uri)
 const selectionsRouter = require('./routes/selections.js');
 const providersRouter = require('./routes/providers.js');
 const chargesRouter = require('./routes/charges.js');
+const specialChargesRouter = require('./routes/specialCharges.js');
 const { seedDatabase } = require('./utils/seedData.js');
 const { reindexDatabase } = require('./utils/reindexDatabase.js');
 
 app.use('/api/selections', selectionsRouter);
 app.use('/api/providers', providersRouter);
 app.use('/api/charges', chargesRouter);
+app.use('/api/special-charges', specialChargesRouter);
 
 // Add seeding endpoint for development
 app.post('/api/seed', async (req, res) => {

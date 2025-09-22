@@ -172,7 +172,7 @@ export default function Dashboard() {
     setBoxes(prev => prev.filter((_, i) => i !== idx));
   };
 
-  const calculate = () => {
+  const calculate = async () => {
     if (!selectedState || boxes.length === 0) {
       alert('Please select a state and add at least one box');
       return;
@@ -197,7 +197,7 @@ export default function Dashboard() {
 
     console.log('Filtered state data:', stateFiltered);
 
-    const providerResults = stateFiltered.map(stateRow => {
+    const providerResults = await Promise.all(stateFiltered.map(async (stateRow) => {
       const vendorId = stateRow["Provider ID"];
       const provider = providers.find(p => p["Provider ID"] === vendorId);
       const fixed = fixedCharges.find(f => f["Provider ID"] === vendorId);
@@ -252,10 +252,46 @@ export default function Dashboard() {
         stateSpecificCharge = handlingChargePerBox * totalBoxes;
       }
 
+      // Fetch and calculate special charges
+      let specialCharges = 0;
+      let specialChargesDetails = [];
+      try {
+        const shipmentDetails = {
+          baseAmount: baseCost + fuelCharge,
+          weight: totalApplicableWeight,
+          serviceType: 'SURFACE', // Default service type
+          city: selectedState // Using state as city for now
+        };
+
+        const specialChargesResponse = await fetch(`${API_BASE_URL}/api/special-charges/calculate`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            providerId: vendorId,
+            state: selectedState,
+            shipmentDetails: shipmentDetails
+          })
+        });
+
+        if (specialChargesResponse.ok) {
+          const specialChargesResult = await specialChargesResponse.json();
+          if (specialChargesResult.success) {
+            specialCharges = specialChargesResult.data.totalAmount || 0;
+            specialChargesDetails = specialChargesResult.data.charges || [];
+          }
+        }
+      } catch (error) {
+        console.warn('Failed to fetch special charges:', error);
+        // Continue without special charges
+      }
+
       const total = baseCost + fuelCharge + docket + codCharge + holidayCharge + 
-                   outstationCharge + ngtGreenTax + insuranceCharge + stateSpecificCharge;
+                   outstationCharge + ngtGreenTax + insuranceCharge + stateSpecificCharge + specialCharges;
 
       return {
+        providerId: vendorId,
         providerName: provider?.["Provider Name"] || `Unknown Provider (ID: ${vendorId})`,
         applicableWeight: totalApplicableWeight.toFixed(2),
         baseCost: baseCost.toFixed(2),
@@ -267,9 +303,11 @@ export default function Dashboard() {
         ngtGreenTax: ngtGreenTax.toFixed(2),
         insuranceCharge: insuranceCharge.toFixed(2),
         stateSpecificCharge: stateSpecificCharge.toFixed(2),
+        specialCharges: specialCharges.toFixed(2),
+        specialChargesDetails: specialChargesDetails,
         total: total.toFixed(2),
       };
-    });
+    }));
 
     console.log('Provider results:', providerResults);
 
@@ -470,6 +508,17 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
                 <td>Kerala/NE Handling Charge</td>
                 <td style="text-align: right;">${provider.stateSpecificCharge}</td>
             </tr>` : ''}
+            ${parseFloat(provider.specialCharges) > 0 ? `
+            <tr>
+                <td>Special Charges</td>
+                <td style="text-align: right;">${provider.specialCharges}</td>
+            </tr>` : ''}
+            ${provider.specialChargesDetails && provider.specialChargesDetails.length > 0 ? 
+              provider.specialChargesDetails.map(charge => `
+            <tr>
+                <td style="padding-left: 20px;">• ${charge.description}</td>
+                <td style="text-align: right;">₹${charge.amount.toFixed(2)}</td>
+            </tr>`).join('') : ''}
             <tr class="total-row">
                 <td><strong>TOTAL</strong></td>
                 <td style="text-align: right; color: #dc2626;"><strong>₹${provider.total}</strong></td>
@@ -1289,7 +1338,32 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
   };
 
   // Add function to handle data updates from advanced settings
-  const handleDataUpdate = useCallback(async (dataType, newData) => {
+  const handleDataUpdate = useCallback(async (dataType, newData, options = {}) => {
+    // Check if this is a single row update (from Advanced Settings row editing)
+    if (options.isSingleRowUpdate) {
+      // For single row updates, just update the local state without making additional API calls
+      // The API call was already made by Advanced Settings component
+      switch (dataType) {
+        case 'providers':
+          setProviders([...newData]); // Update local state only
+          console.log('Updated local providers state after single row edit');
+          break;
+        case 'states':
+          setStatewiseCharges([...newData]); // Update local state only
+          console.log('Updated local statewise charges state after single row edit');
+          break;
+        case 'fixed':
+          setFixedCharges([...newData]); // Update local state only
+          console.log('Updated local fixed charges state after single row edit');
+          break;
+        default:
+          console.warn('Unknown data type:', dataType);
+          break;
+      }
+      return; // Exit early - no bulk API calls for single row updates
+    }
+
+    // Rest of the function handles bulk updates (file uploads, etc.)
     // Validate that newData is an array and has the correct structure
     if (!Array.isArray(newData) || newData.length === 0) {
       console.error('Invalid data provided for update:', dataType);
@@ -1769,6 +1843,22 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
                               <div className="cost-item">
                                 <span className="cost-label">Kerala/NE Handling</span>
                                 <span className="cost-value">₹{r.stateSpecificCharge}</span>
+                              </div>
+                            )}
+                            {parseFloat(r.specialCharges) > 0 && (
+                              <div className="cost-item">
+                                <span className="cost-label">Special Charges</span>
+                                <span className="cost-value">₹{r.specialCharges}</span>
+                              </div>
+                            )}
+                            {r.specialChargesDetails && r.specialChargesDetails.length > 0 && (
+                              <div className="special-charges-details">
+                                {r.specialChargesDetails.map((charge, idx) => (
+                                  <div key={idx} className="cost-item special-charge">
+                                    <span className="cost-label">• {charge.description}</span>
+                                    <span className="cost-value">₹{charge.amount.toFixed(2)}</span>
+                                  </div>
+                                ))}
                               </div>
                             )}
                           </div>

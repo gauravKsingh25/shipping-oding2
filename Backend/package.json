@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "migrate": "node scripts/migrateJsonToMongoDB.js"
+    "migrate": "node scripts/migrateJsonToMongoDB.js",
+    "integrate-excel": "node scripts/runIntegration.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",

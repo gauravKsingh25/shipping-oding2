@@ -221,19 +221,24 @@ export default function AdvancedSettings({
       const result = await response.json();
       
       if (result.success) {
-        // Get fresh data after API call to ensure consistency
+        // Update only the local data for single row edits - DO NOT call onDataUpdate for single row changes
+        // This prevents unnecessary bulk API calls and preserves the user's current state
         const freshCurrentData = getCurrentData();
         const updatedData = [...freshCurrentData];
         
-        // Merge the edited data with any additional fields that might have been returned from API
+        // Clean the API response data to only include fields we want to display
+        const cleanResponseData = cleanApiResponseData(result.data, activeTab);
+        
+        // Merge the edited data with the cleaned API response data
         updatedData[editingRowIndex] = { 
-          ...originalRow, // Keep original fields (like _id, etc.)
+          ...originalRow, // Keep original fields (like _id for updates)
           ...editingData, // Apply the edited changes
-          ...(result.data || {}) // Apply any additional data returned from API
+          ...cleanResponseData // Apply cleaned API response data
         };
         
-        // Update parent component data
-        onDataUpdate(activeTab, updatedData);
+        // Update parent component data ONLY for display purposes, not triggering bulk API calls
+        // We use a special flag to indicate this is a single row update
+        onDataUpdate(activeTab, updatedData, { isSingleRowUpdate: true });
         
         setUploadStatus('✅ Changes saved successfully!');
         
@@ -348,20 +353,23 @@ export default function AdvancedSettings({
       const result = await response.json();
       
       if (result.success) {
-        // Get fresh data to ensure we have the latest state
+        // Create new row - update local data only, no bulk API calls
         const freshCurrentData = getCurrentData();
         
-        // Create the new row data with API response data (if any) and form data
+        // Clean the API response data to only include fields we want to display
+        const cleanResponseData = cleanApiResponseData(result.data, activeTab);
+        
+        // Create the new row data with cleaned API response data and form data
         const newRowWithApiData = {
           ...newRowData, // Form data
-          ...(result.data || {}) // API response data (like auto-generated IDs)
+          ...cleanResponseData // Cleaned API response data (like auto-generated IDs)
         };
         
         // Add to local data
         const updatedData = [...freshCurrentData, newRowWithApiData];
         
-        // Update parent component data
-        onDataUpdate(activeTab, updatedData);
+        // Update parent component data with single row update flag
+        onDataUpdate(activeTab, updatedData, { isSingleRowUpdate: true });
         
         setUploadStatus('✅ New row created successfully!');
         
@@ -433,14 +441,14 @@ export default function AdvancedSettings({
       const result = await response.json();
       
       if (result.success) {
-        // Get fresh data to ensure we have the latest state
+        // Delete row - update local data only, no bulk API calls
         const freshCurrentData = getCurrentData();
         
         // Remove from local data
         const updatedData = freshCurrentData.filter((_, index) => index !== rowIndex);
         
-        // Update parent component data
-        onDataUpdate(activeTab, updatedData);
+        // Update parent component data with single row update flag
+        onDataUpdate(activeTab, updatedData, { isSingleRowUpdate: true });
         
         setUploadStatus('✅ Row deleted successfully!');
         
@@ -479,6 +487,23 @@ export default function AdvancedSettings({
         : 'http://localhost:5000');
   };
 
+  // Helper function to clean API response data - remove MongoDB internal fields
+  const cleanApiResponseData = (data, dataType) => {
+    if (!data) return {};
+    
+    // Fields to exclude from the display
+    const fieldsToExclude = ['__v', 'createdAt', 'updatedAt'];
+    
+    const cleanedData = {};
+    Object.keys(data).forEach(key => {
+      if (!fieldsToExclude.includes(key)) {
+        cleanedData[key] = data[key];
+      }
+    });
+    
+    return cleanedData;
+  };
+
   const renderDataTable = (data, type) => {
     if (!data || data.length === 0) {
       return (
@@ -495,8 +520,27 @@ export default function AdvancedSettings({
       );
     }
 
-    const headers = Object.keys(data[0]);
+    // Filter headers to only show relevant columns based on data type
     const schema = dataSchemas[type];
+    const allHeaders = Object.keys(data[0]);
+    
+    // Define the columns we want to show for each data type
+    const relevantColumns = {
+      providers: ['Provider ID', 'Provider Name', 'description', 'isActive'],
+      states: ['Provider ID', 'Provider Name', 'State', 'Per Kilo Fee (INR)', 'Fuel Surcharge (%)'],
+      fixed: ['Provider ID', 'Docket Charge (INR)', 'COD Charge (INR)', 'Holiday Charge (INR)', 'Outstation Charge (INR)', 'Insurance Charge (%)', 'NGT Green Tax (INR)', 'Kerala North East Handling Charge (INR)']
+    };
+    
+    // Use relevant columns if defined, otherwise fall back to schema-based filtering
+    const headers = relevantColumns[type] || 
+      allHeaders.filter(header => 
+        // Filter out MongoDB internal fields and timestamps
+        !header.startsWith('_') && 
+        header !== '__v' && 
+        header !== 'createdAt' && 
+        header !== 'updatedAt' &&
+        (schema.required.includes(header) || schema.optional.includes(header))
+      );
 
     return (
       <div className="data-table-container">

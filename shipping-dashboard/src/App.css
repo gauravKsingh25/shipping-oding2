@@ -256,9 +256,9 @@
   background: white;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  max-width: 95vw;
+  max-width: 98vw;
   max-height: 95vh;
-  width: 1200px;
+  width: 1400px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -801,12 +801,14 @@
 /* Data Table */
 .data-table {
   overflow-x: auto;
+  margin-bottom: 20px;
 }
 
 .data-table table {
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
+  min-width: 800px; /* Ensure minimum width for readability */
 }
 
 .data-table th {
@@ -817,11 +819,36 @@
   font-weight: 600;
   border-bottom: 2px solid #e9ecef;
   white-space: nowrap;
+  position: relative;
+}
+
+/* Specific column width controls */
+.data-table th:nth-child(1), /* ID columns */
+.data-table td:nth-child(1) {
+  width: 80px;
+  min-width: 80px;
+}
+
+.data-table th:nth-child(2), /* Provider ID */
+.data-table td:nth-child(2) {
+  width: 100px;
+  min-width: 100px;
+}
+
+.data-table th:nth-child(3), /* Provider Name */
+.data-table td:nth-child(3) {
+  min-width: 150px;
+}
+
+.data-table th:nth-child(4), /* State */
+.data-table td:nth-child(4) {
+  min-width: 120px;
 }
 
 .actions-header {
   text-align: center;
   width: 120px;
+  min-width: 120px;
 }
 
 .data-table td {

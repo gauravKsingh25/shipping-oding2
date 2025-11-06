@@ -1,0 +1,514 @@
+Gatti Cargo charges 9.3 for Andhra Pradesh.
+Depee World charges 11 for Andhra Pradesh.
+Trackon Courier charges 45 for Andhra Pradesh.
+DTDC Courier charges 56 for Andhra Pradesh.
+DTDC Courier (Air) charges 156 for Andhra Pradesh.
+TCI Transport charges 11 for Andhra Pradesh.
+DTDC Express Cargo charges 10 for Andhra Pradesh.
+V Trans charges 9 for Andhra Pradesh.
+Vision Logistics charges 22 for Andhra Pradesh.
+Safexpress charges 13.75 for Andhra Pradesh.
+Gatti Cargo charges 17 for Arunachal Pradesh.
+Depee World charges 27 for Arunachal Pradesh.
+Trackon Courier charges 45 for Arunachal Pradesh.
+DTDC Courier charges 56 for Arunachal Pradesh.
+DTDC Courier (Air) charges 210 for Arunachal Pradesh.
+TCI Transport charges 25 for Arunachal Pradesh.
+DTDC Express Cargo charges 10 for Arunachal Pradesh.
+V Trans charges 9 for Arunachal Pradesh.
+Vision Logistics charges 24 for Arunachal Pradesh.
+Safexpress charges 21 for Arunachal Pradesh.
+Gatti Cargo charges 17 for Assam.
+Depee World charges 15 for Assam.
+Trackon Courier charges 70 for Assam.
+DTDC Courier charges 70 for Assam.
+TCI Transport charges 17 for Assam.
+DTDC Express Cargo charges 15 for Assam.
+V Trans charges 11 for Assam.
+Vision Logistics charges 24 for Assam.
+Safexpress charges 21 for Assam.
+Gatti Cargo charges 11 for Bihar.
+Depee World charges 10.5 for Bihar.
+Trackon Courier charges 45 for Bihar.
+DTDC Courier charges 56 for Bihar.
+TCI Transport charges 14 for Bihar.
+DTDC Express Cargo charges 11 for Bihar.
+V Trans charges 8.5 for Bihar.
+Vision Logistics charges 22 for Bihar.
+Safexpress charges 13.75 for Bihar.
+Gatti Cargo charges 8.5 for Chhattisgarh.
+Depee World charges 9 for Chhattisgarh.
+Trackon Courier charges 45 for Chhattisgarh.
+DTDC Courier charges 56 for Chhattisgarh.
+TCI Transport charges 13 for Chhattisgarh.
+DTDC Express Cargo charges 9 for Chhattisgarh.
+V Trans charges 8.5 for Chhattisgarh.
+Vision Logistics charges 24 for Chhattisgarh.
+Safexpress charges 13.75 for Chhattisgarh.
+Gatti Cargo charges 8.5 for Goa.
+Depee World charges 9 for Goa.
+Trackon Courier charges 50 for Goa.
+DTDC Courier charges 56 for Goa.
+TCI Transport charges 10 for Goa.
+DTDC Express Cargo charges 9 for Goa.
+V Trans charges 8.5 for Goa.
+Vision Logistics charges 24 for Goa.
+Safexpress charges 8.5 for Goa.
+Gatti Cargo charges 8.5 for Gujarat.
+Depee World charges 9 for Gujarat.
+Trackon Courier charges 45 for Gujarat.
+DTDC Courier charges 56 for Gujarat.
+TCI Transport charges 10 for Gujarat.
+DTDC Express Cargo charges 9 for Gujarat.
+V Trans charges 6.5 for Gujarat.
+Vision Logistics charges 22 for Gujarat.
+Safexpress charges 8.5 for Gujarat.
+Gatti Cargo charges 5.6 for Haryana.
+Depee World charges 6 for Haryana.
+Trackon Courier charges 15 for Haryana.
+DTDC Courier charges 15 for Haryana.
+TCI Transport charges 8 for Haryana.
+DTDC Express Cargo charges 6 for Haryana.
+V Trans charges 5.5 for Haryana.
+Vision Logistics charges 10 for Haryana.
+Safexpress charges 7 for Haryana.
+Trackon Courier charges 20 for GURUGRAM.
+DTDC Courier charges 33 for GURUGRAM.
+TCI Transport charges 7 for GURUGRAM.
+DTDC Express Cargo charges 6 for GURUGRAM.
+V Trans charges 5.5 for GURUGRAM.
+Vision Logistics charges 10 for GURUGRAM.
+Safexpress charges 7 for GURUGRAM.
+GURUGRAM has a Safexpress green tax of 100.
+Gatti Cargo charges 5.6 for Himachal Pradesh.
+Depee World charges 9 for Himachal Pradesh.
+Trackon Courier charges 25 for Himachal Pradesh.
+DTDC Courier charges 15 for Himachal Pradesh.
+TCI Transport charges 10 for Himachal Pradesh.
+DTDC Express Cargo charges 6.5 for Himachal Pradesh.
+V Trans charges 5.5 for Himachal Pradesh.
+Vision Logistics charges 15 for Himachal Pradesh.
+Safexpress charges 7 for Himachal Pradesh.
+Gatti Cargo charges 11 for Jharkhand.
+Depee World charges 10.5 for Jharkhand.
+Trackon Courier charges 45 for Jharkhand.
+DTDC Courier charges 56 for Jharkhand.
+TCI Transport charges 14 for Jharkhand.
+DTDC Express Cargo charges 11 for Jharkhand.
+V Trans charges 8.5 for Jharkhand.
+Vision Logistics charges 22 for Jharkhand.
+Safexpress charges 13.75 for Jharkhand.
+Gatti Cargo charges 9.3 for Karnataka.
+Depee World charges 11 for Karnataka.
+Trackon Courier charges 50 for Karnataka.
+DTDC Courier charges 56 for Karnataka.
+TCI Transport charges 11 for Karnataka.
+DTDC Express Cargo charges 10 for Karnataka.
+V Trans charges 9 for Karnataka.
+Vision Logistics charges 22 for Karnataka.
+Safexpress charges 10.75 for Karnataka.
+DTDC Courier charges 46 for Bengloor.
+TCI Transport charges 10 for Bengloor.
+DTDC Express Cargo charges 10 for Bengloor.
+V Trans charges 9 for Bengloor.
+Vision Logistics charges 22 for Bengloor.
+Safexpress charges 10.75 for Bengloor.
+Gatti Cargo charges 9.5 for Kerala.
+Depee World charges 12 for Kerala.
+Trackon Courier charges 50 for Kerala.
+DTDC Courier charges 56 for Kerala.
+TCI Transport charges 14 for Kerala.
+DTDC Express Cargo charges 12 for Kerala.
+V Trans charges 9.5 for Kerala.
+Vision Logistics charges 22 for Kerala.
+Safexpress charges 13.75 for Kerala.
+Gatti Cargo charges 8.5 for Madhya Pradesh.
+Depee World charges 9 for Madhya Pradesh.
+Trackon Courier charges 50 for Madhya Pradesh.
+DTDC Courier charges 56 for Madhya Pradesh.
+TCI Transport charges 10 for Madhya Pradesh.
+DTDC Express Cargo charges 9 for Madhya Pradesh.
+V Trans charges 8.5 for Madhya Pradesh.
+Vision Logistics charges 22 for Madhya Pradesh.
+Safexpress charges 8.5 for Madhya Pradesh.
+Gatti Cargo charges 8.5 for Maharashtra.
+Depee World charges 9 for Maharashtra.
+Trackon Courier charges 50 for Maharashtra.
+DTDC Courier charges 56 for Maharashtra.
+TCI Transport charges 10 for Maharashtra.
+DTDC Express Cargo charges 9 for Maharashtra.
+V Trans charges 7.5 for Maharashtra.
+Vision Logistics charges 22 for Maharashtra.
+Safexpress charges 8.5 for Maharashtra.
+Gatti Cargo charges 18 for Manipur.
+Depee World charges 27 for Manipur.
+Trackon Courier charges 70 for Manipur.
+DTDC Courier charges 75 for Manipur.
+TCI Transport charges 25 for Manipur.
+DTDC Express Cargo charges 15 for Manipur.
+V Trans charges 11 for Manipur.
+Vision Logistics charges 24 for Manipur.
+Safexpress charges 31 for Manipur.
+Gatti Cargo charges 18 for Meghalaya.
+Depee World charges 27 for Meghalaya.
+Trackon Courier charges 70 for Meghalaya.
+DTDC Courier charges 75 for Meghalaya.
+TCI Transport charges 25 for Meghalaya.
+DTDC Express Cargo charges 15 for Meghalaya.
+V Trans charges 11 for Meghalaya.
+Vision Logistics charges 24 for Meghalaya.
+Safexpress charges 31 for Meghalaya.
+Gatti Cargo charges 18 for Mizoram.
+Depee World charges 27 for Mizoram.
+Trackon Courier charges 70 for Mizoram.
+DTDC Courier charges 75 for Mizoram.
+TCI Transport charges 25 for Mizoram.
+DTDC Express Cargo charges 15 for Mizoram.
+V Trans charges 11 for Mizoram.
+Vision Logistics charges 24 for Mizoram.
+Safexpress charges 31 for Mizoram.
+Gatti Cargo charges 18 for Nagaland.
+Depee World charges 27 for Nagaland.
+Trackon Courier charges 70 for Nagaland.
+DTDC Courier charges 75 for Nagaland.
+TCI Transport charges 25 for Nagaland.
+DTDC Express Cargo charges 15 for Nagaland.
+V Trans charges 0 for Nagaland.
+Vision Logistics charges 24 for Nagaland.
+Safexpress charges 31 for Nagaland.
+Gatti Cargo charges 11 for Odisha.
+Depee World charges 10.5 for Odisha.
+Trackon Courier charges 50 for Odisha.
+DTDC Courier charges 56 for Odisha.
+TCI Transport charges 14 for Odisha.
+DTDC Express Cargo charges 11 for Odisha.
+V Trans charges 8.5 for Odisha.
+Vision Logistics charges 24 for Odisha.
+Safexpress charges 13.75 for Odisha.
+Gatti Cargo charges 5.6 for Punjab.
+Depee World charges 6 for Punjab.
+Trackon Courier charges 15 for Punjab.
+DTDC Courier charges 15 for Punjab.
+TCI Transport charges 8 for Punjab.
+DTDC Express Cargo charges 6 for Punjab.
+V Trans charges 5.5 for Punjab.
+Vision Logistics charges 10 for Punjab.
+Safexpress charges 7 for Punjab.
+Gatti Cargo charges 5.6 for Rajasthan.
+Depee World charges 6 for Rajasthan.
+Trackon Courier charges 35 for Rajasthan.
+DTDC Courier charges 33 for Rajasthan.
+TCI Transport charges 8 for Rajasthan.
+DTDC Express Cargo charges 6 for Rajasthan.
+V Trans charges 5.5 for Rajasthan.
+Vision Logistics charges 15 for Rajasthan.
+Safexpress charges 7 for Rajasthan.
+Gatti Cargo charges 11 for Sikkim.
+Depee World charges 27 for Sikkim.
+Trackon Courier charges 70 for Sikkim.
+DTDC Courier charges 70 for Sikkim.
+TCI Transport charges 25 for Sikkim.
+DTDC Express Cargo charges 15 for Sikkim.
+V Trans charges 11 for Sikkim.
+Vision Logistics charges 24 for Sikkim.
+Safexpress charges 13.75 for Sikkim.
+Gatti Cargo charges 9.5 for Tamil Nadu.
+Depee World charges 11 for Tamil Nadu.
+Trackon Courier charges 50 for Tamil Nadu.
+DTDC Courier charges 56 for Tamil Nadu.
+TCI Transport charges 11 for Tamil Nadu.
+DTDC Express Cargo charges 10 for Tamil Nadu.
+V Trans charges 9 for Tamil Nadu.
+Vision Logistics charges 22 for Tamil Nadu.
+Safexpress charges 10.75 for Tamil Nadu.
+Gatti Cargo charges 9.3 for Telangana/Hydrabad.
+Depee World charges 11 for Telangana/Hydrabad.
+Trackon Courier charges 45 for Telangana/Hydrabad.
+Trackon Courier (Air) charges 130 for Telangana/Hydrabad.
+DTDC Courier charges 56 for Telangana/Hydrabad.
+TCI Transport charges 11 for Telangana/Hydrabad.
+DTDC Express Cargo charges 10 for Telangana/Hydrabad.
+V Trans charges 9 for Telangana/Hydrabad.
+Vision Logistics charges 22 for Telangana/Hydrabad.
+Safexpress charges 10.75 for Telangana/Hydrabad.
+DTDC Courier charges 46 for Hydrabad.
+TCI Transport charges 11 for Hydrabad.
+DTDC Express Cargo charges 10 for Hydrabad.
+V Trans charges 9 for Hydrabad.
+Vision Logistics charges 22 for Hydrabad.
+Safexpress charges 10.75 for Hydrabad.
+Gatti Cargo charges 18 for Tripura.
+Depee World charges 27 for Tripura.
+Trackon Courier charges 70 for Tripura.
+DTDC Courier charges 75 for Tripura.
+TCI Transport charges 25 for Tripura.
+DTDC Express Cargo charges 10 for Tripura.
+V Trans charges 9 for Tripura.
+Vision Logistics charges 24 for Tripura.
+Safexpress charges 31 for Tripura.
+Gatti Cargo charges 5.6 for Uttar Pradesh.
+Depee World charges 6 for Uttar Pradesh.
+Trackon Courier charges 35 for Uttar Pradesh.
+DTDC Courier charges 33 for Uttar Pradesh.
+TCI Transport charges 8 for Uttar Pradesh.
+DTDC Express Cargo charges 6 for Uttar Pradesh.
+V Trans charges 5.5 for Uttar Pradesh.
+Vision Logistics charges 15 for Uttar Pradesh.
+Safexpress charges 7 for Uttar Pradesh.
+Gatti Cargo charges 5.6 for Uttarakhand.
+Depee World charges 6 for Uttarakhand.
+Trackon Courier charges 35 for Uttarakhand.
+DTDC Courier charges 33 for Uttarakhand.
+TCI Transport charges 10 for Uttarakhand.
+DTDC Express Cargo charges 6 for Uttarakhand.
+V Trans charges 5.5 for Uttarakhand.
+Vision Logistics charges 15 for Uttarakhand.
+Safexpress charges 7 for Uttarakhand.
+Gatti Cargo charges 11 for West Bengal.
+Depee World charges 10.5 for West Bengal.
+Trackon Courier charges 50 for West Bengal.
+DTDC Courier charges 56 for West Bengal.
+TCI Transport charges 11 for West Bengal.
+DTDC Express Cargo charges 11 for West Bengal.
+V Trans charges 8.5 for West Bengal.
+Vision Logistics charges 22 for West Bengal.
+Safexpress charges 13.75 for West Bengal.
+Gatti Cargo charges 15 for Kashmir and srinagar.
+Depee World charges 9 for Kashmir and srinagar.
+Trackon Courier charges 70 for Kashmir and srinagar.
+DTDC Courier charges 33 for Kashmir and srinagar.
+TCI Transport charges 13 for Kashmir and srinagar.
+DTDC Express Cargo charges 6.5 for Kashmir and srinagar.
+V Trans charges 10 for Kashmir and srinagar.
+Vision Logistics charges 25 for Kashmir and srinagar.
+Safexpress charges 13 for Kashmir and srinagar.
+Gatti Cargo charges 5.6 for Jammu.
+Depee World charges 9 for Jammu.
+Trackon Courier charges 35 for Jammu.
+DTDC Courier charges 33 for Jammu.
+TCI Transport charges 10 for Jammu.
+DTDC Express Cargo charges 6.5 for Jammu.
+V Trans charges 4.25 for Jammu.
+Vision Logistics charges 20 for Jammu.
+Safexpress charges 7 for Jammu.
+Gatti Cargo charges 120 for Port Blair.
+TCI Transport charges 32 for Port Blair.
+Safexpress charges 100 for Port Blair.
+Gatti Cargo charges 8.5 for Daman & Diu .
+Trackon Courier charges 45 for Daman & Diu .
+DTDC Courier charges 56 for Daman & Diu .
+TCI Transport charges 10 for Daman & Diu .
+DTDC Express Cargo charges 9 for Daman & Diu .
+V Trans charges 6.5 for Daman & Diu .
+Safexpress charges 8.5 for Daman & Diu .
+Gatti Cargo charges 8.5 for Dadra and Nagar Haveli.
+Depee World charges 9 for Dadra and Nagar Haveli.
+Trackon Courier charges 45 for Dadra and Nagar Haveli.
+DTDC Courier charges 56 for Dadra and Nagar Haveli.
+TCI Transport charges 10 for Dadra and Nagar Haveli.
+DTDC Express Cargo charges 9 for Dadra and Nagar Haveli.
+V Trans charges 6.5 for Dadra and Nagar Haveli.
+Safexpress charges 8.5 for Dadra and Nagar Haveli.
+Gatti Cargo charges 9.5 for Ponducherry.
+Depee World charges 12 for Ponducherry.
+Trackon Courier charges 50 for Ponducherry.
+DTDC Courier charges 56 for Ponducherry.
+TCI Transport charges 10 for Ponducherry.
+DTDC Express Cargo charges 9 for Ponducherry.
+V Trans charges 9 for Ponducherry.
+Safexpress charges 10.75 for Ponducherry.
+Gatti Cargo charges 5.6 for DELHI.
+Depee World charges 6 for DELHI.
+Trackon Courier charges 20 for DELHI.
+DTDC Courier charges 33 for DELHI.
+TCI Transport charges 7 for DELHI.
+DTDC Express Cargo charges 6 for DELHI.
+V Trans charges 4.5 for DELHI.
+Vision Logistics charges 10 for DELHI.
+Safexpress charges 7 for DELHI.
+DELHI has a Safexpress green tax of 100.
+Gatti Cargo charges 9.5 for KERLA.
+Depee World charges 12 for KERLA.
+Trackon Courier charges 50 for KERLA.
+Trackon Courier (Air) charges 150 for KERLA.
+DTDC Courier charges 56 for KERLA.
+TCI Transport charges 14 for KERLA.
+DTDC Express Cargo charges 12 for KERLA.
+V Trans charges 9.5 for KERLA.
+Vision Logistics charges 22 for KERLA.
+Safexpress charges 13.75 for KERLA.
+KERLA has a Safexpress green tax of 100.
+Depee World charges 12 for COIMBOTORE.
+Trackon Courier charges 50 for COIMBOTORE.
+DTDC Courier charges 56 for COIMBOTORE.
+TCI Transport charges 11 for COIMBOTORE.
+DTDC Express Cargo charges 10 for COIMBOTORE.
+V Trans charges 9.5 for COIMBOTORE.
+Vision Logistics charges 22 for COIMBOTORE.
+Safexpress charges 10.75 for COIMBOTORE.
+Depee World charges 27 for SILIGURI.
+Trackon Courier charges 50 for SILIGURI.
+DTDC Courier charges 56 for SILIGURI.
+TCI Transport charges 11 for SILIGURI.
+DTDC Express Cargo charges 15 for SILIGURI.
+V Trans charges 11 for SILIGURI.
+Vision Logistics charges 22 for SILIGURI.
+Safexpress charges 10.75 for SILIGURI.
+Depee World charges 27 for AGARATALA.
+Trackon Courier charges 70 for AGARATALA.
+TCI Transport charges 25 for AGARATALA.
+DTDC Express Cargo charges 11 for AGARATALA.
+V Trans charges 11 for AGARATALA.
+Vision Logistics charges 22 for AGARATALA.
+Safexpress charges 31 for AGARATALA.
+Depee World charges 27 for IMPHAL.
+Trackon Courier charges 70 for IMPHAL.
+TCI Transport charges 25 for IMPHAL.
+DTDC Express Cargo charges 15 for IMPHAL.
+V Trans charges 11 for IMPHAL.
+Vision Logistics charges 24 for IMPHAL.
+Safexpress charges 31 for IMPHAL.
+Depee World charges 27 for SILCHAR.
+Trackon Courier charges 70 for SILCHAR.
+TCI Transport charges 17 for SILCHAR.
+DTDC Express Cargo charges 15 for SILCHAR.
+V Trans charges 11 for SILCHAR.
+Vision Logistics charges 24 for SILCHAR.
+Safexpress charges 31 for SILCHAR.
+Depee World charges 27 for JORHAT.
+Trackon Courier charges 70 for JORHAT.
+TCI Transport charges 25 for JORHAT.
+DTDC Express Cargo charges 15 for JORHAT.
+V Trans charges 11 for JORHAT.
+Safexpress charges 21 for JORHAT.
+Depee World charges 9 for NASIK.
+Trackon Courier charges 50 for NASIK.
+DTDC Courier charges 56 for NASIK.
+TCI Transport charges 10 for NASIK.
+DTDC Express Cargo charges 9 for NASIK.
+V Trans charges 7.5 for NASIK.
+Vision Logistics charges 22 for NASIK.
+Safexpress charges 8.5 for NASIK.
+DTDC Courier charges 46 for Chenai .
+DTDC Courier (Air) charges 140 for Chenai .
+TCI Transport charges 10 for Chenai .
+DTDC Express Cargo charges 10 for Chenai .
+V Trans charges 9 for Chenai .
+Vision Logistics charges 22 for Chenai .
+Safexpress charges 10.75 for Chenai .
+Chenai  has a Safexpress green tax of 100.
+DTDC Courier charges 46 for Kolkatta.
+DTDC Courier (Air) charges 140 for Kolkatta.
+TCI Transport charges 11 for Kolkatta.
+DTDC Express Cargo charges 11 for Kolkatta.
+V Trans charges 8.5 for Kolkatta.
+Vision Logistics charges 22 for Kolkatta.
+Safexpress charges 13.75 for Kolkatta.
+Kolkatta has a Safexpress green tax of 100.
+DTDC Courier charges 46 for Hydrabad.
+DTDC Courier (Air) charges 140 for Hydrabad.
+TCI Transport charges 11 for Hydrabad.
+DTDC Express Cargo charges 10 for Hydrabad.
+V Trans charges 9 for Hydrabad.
+Vision Logistics charges 22 for Hydrabad.
+Safexpress charges 10.75 for Hydrabad.
+Hydrabad has a Safexpress green tax of 100.
+DTDC Courier charges 46 for Mumbai.
+DTDC Courier (Air) charges 140 for Mumbai.
+TCI Transport charges 10 for Mumbai.
+DTDC Express Cargo charges 9 for Mumbai.
+V Trans charges 7.5 for Mumbai.
+Vision Logistics charges 22 for Mumbai.
+Safexpress charges 8.5 for Mumbai.
+Mumbai has a Safexpress green tax of 100.
+DTDC Courier charges 46 for Bengloor.
+DTDC Courier (Air) charges 140 for Bengloor.
+TCI Transport charges 10 for Bengloor.
+DTDC Express Cargo charges 10 for Bengloor.
+V Trans charges 9 for Bengloor.
+Vision Logistics charges 22 for Bengloor.
+Safexpress charges 10.75 for Bengloor.
+Bengloor has a Safexpress green tax of 100.
+DTDC Courier charges 46 for Ahmedabad.
+DTDC Courier (Air) charges 140 for Ahmedabad.
+TCI Transport charges 10 for Ahmedabad.
+DTDC Express Cargo charges 9 for Ahmedabad.
+V Trans charges 6.5 for Ahmedabad.
+Vision Logistics charges 22 for Ahmedabad.
+Safexpress charges 8.5 for Ahmedabad.
+Ahmedabad has a Safexpress green tax of 100.
+Safexpress charges 8.5 for Pune.
+Pune has a Safexpress green tax of 100.
+Gatti Cargo charges 50 for DOCKET CHARGES.
+Depee World charges 50 for DOCKET CHARGES.
+DTDC Courier charges 150 for DOCKET CHARGES.
+TCI Transport charges 50 for DOCKET CHARGES.
+DTDC Express Cargo charges 50 for DOCKET CHARGES.
+V Trans charges 50 for DOCKET CHARGES.
+Vision Logistics charges 50 for DOCKET CHARGES.
+Safexpress charges 100 for DOCKET CHARGES.
+Gatti Cargo charges 100 for FOV.
+Depee World charges 100 for FOV.
+TCI Transport charges 0.001 for FOV.
+DTDC Express Cargo charges 100 for FOV.
+V Trans charges 0.0001 for FOV.
+Vision Logistics charges 0.0001 for FOV.
+Safexpress charges 0.001 for FOV.
+FOV has a Safexpress green tax of 100.
+Gatti Cargo charges 50 for COD.
+Depee World charges 100 for COD.
+Trackon Courier charges 300 for COD.
+DTDC Courier charges 150 for COD.
+TCI Transport charges 100 for COD.
+DTDC Express Cargo charges 100 for COD.
+V Trans charges 75 for COD.
+Vision Logistics charges 150 for COD.
+Safexpress charges 250 for COD.
+Gatti Cargo charges 0.15 for FUEL.
+Depee World charges 0.15 for FUEL.
+Trackon Courier charges 0.2 for FUEL.
+DTDC Courier charges 0.15 for FUEL.
+TCI Transport charges 0.18 for FUEL.
+DTDC Express Cargo charges 0.1 for FUEL.
+V Trans charges 0.05 for FUEL.
+Safexpress charges 0.2 for FUEL.
+Gatti Cargo charges 100 for GREENT TAX.
+Depee World charges NIL for GREENT TAX.
+TCI Transport charges 100 for GREENT TAX.
+DTDC Express Cargo charges NIL for GREENT TAX.
+V Trans charges 0 for GREENT TAX.
+Gatti Cargo charges 6 for CFT.
+Depee World charges 6 for CFT.
+DTDC Courier charges L*W*H/4750 for CFT.
+TCI Transport charges L*W*H/1728*7 CFT 6 for CFT.
+DTDC Express Cargo charges L*B*H /27000 CFT 6 for CFT.
+V Trans charges CFT 6 L*B*H/27000 for CFT.
+Vision Logistics charges 20 KG MINI WEIGHT 450/- MIN DOC for CFT.
+Safexpress charges 400/- MIN WEIGHT 20 KGS for CFT.
+Gatti Cargo charges 15 for MINI CHARGES WT.
+Depee World charges 20 for MINI CHARGES WT.
+DTDC Courier charges 3KGS for MINI CHARGES WT.
+DTDC Express Cargo charges 25 KGS MILI DOCKET CHARGES 300/) for MINI CHARGES WT.
+V Trans charges 30 KGS MINI FREIGT 500/- for MINI CHARGES WT.
+Vision Logistics charges L*B*H/27000   CFT 6 for MINI CHARGES WT.
+Safexpress charges L*B*H/27000 CFT 6 for MINI CHARGES WT.
+Trackon Courier charges 100 for E-WAY BILL ABOVE 50000/-.
+DTDC Courier charges 200 for E-WAY BILL ABOVE 50000/-.
+Gatti Cargo charges 400 for SUNDAY HOLIDAY CHARGES.
+Depee World charges 150 for SUNDAY HOLIDAY CHARGES.
+TCI Transport charges 250/ MINI PER DOCKET OF 10KGS for SUNDAY HOLIDAY CHARGES.
+Gatti Cargo charges TO HIGH for ODA.
+Depee World charges 3 for ODA.
+TCI Transport charges ODA EXTRA for ODA.
+DTDC Express Cargo charges ODA  for ODA.
+Vision Logistics charges 350 PUNJAB HARYANA OTHER 750/0 for ODA.
+Safexpress charges 1200 for ODA.
+ODA has a Safexpress green tax of ODA EVERY LOCATION.
+Gatti Cargo charges 0.18 for GST.
+Depee World charges 0.18 for GST.
+Trackon Courier charges 0.18 for GST.
+DTDC Courier charges 0.18 for GST.
+TCI Transport charges 0.18 for GST.
+V Trans charges 0.12 for GST.
+Vision Logistics charges 18 for GST.
+Safexpress charges 0.18 for GST.

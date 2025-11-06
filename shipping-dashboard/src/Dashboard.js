@@ -294,6 +294,7 @@ export default function Dashboard() {
         providerId: vendorId,
         providerName: provider?.["Provider Name"] || `Unknown Provider (ID: ${vendorId})`,
         applicableWeight: totalApplicableWeight.toFixed(2),
+        weightDetails: { totalWeight: totalApplicableWeight.toFixed(2), boxes },
         baseCost: baseCost.toFixed(2),
         fuelCharge: fuelCharge.toFixed(2),
         docket: docket.toFixed(2),
@@ -1785,7 +1786,20 @@ const generateHTMLQuotation = (vendorName, provider, selectedState, boxes, total
                         <div className="provider-info">
                           <h4 className="provider-name">{r.providerName}</h4>
                           <div className="provider-weight">
-                            Weight: {r.applicableWeight} kg
+                            {r.weightDetails && r.weightDetails.boxes ? (
+                              (() => {
+                                const totalBoxes = r.weightDetails.boxes.reduce((sum, box) => sum + box.quantity, 0);
+                                const avgWeightPerBox = totalBoxes > 0 ? (parseFloat(r.applicableWeight) / totalBoxes).toFixed(2) : 0;
+                                
+                                if (totalBoxes === 1) {
+                                  return `Weight: ${r.applicableWeight} kg`;
+                                } else {
+                                  return `Weight: ${r.applicableWeight} kg (${totalBoxes} boxes, avg ${avgWeightPerBox} kg/box)`;
+                                }
+                              })()
+                            ) : (
+                              `Weight: ${r.applicableWeight} kg`
+                            )}
                           </div>
                         </div>
                         <div className="provider-price">

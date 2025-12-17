@@ -102,10 +102,12 @@ async function updateGattiCargo() {
         insuranceChargePercent: 0.01, // 100/10000 = 1%
         ngtGreenTax: 100,
         keralaHandlingCharge: 0,
+        volumetricDivisor: 27000, // L×W×H ÷ 27,000
+        minimumChargeableWeight: 6, // Minimum 6 kg
       },
       { upsert: true, new: true }
     );
-    console.log('Fixed charges updated');
+    console.log('Fixed charges updated with volumetric divisor: 27000, min weight: 6kg');
 
     // Step 4: Update special charges (GST)
     console.log('Updating special charges...');

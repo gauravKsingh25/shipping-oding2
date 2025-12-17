@@ -137,13 +137,15 @@ async function updateVTrans() {
         codCharge: 75,
         holidayCharge: 0,
         outstationCharge: 0,
-        insuranceChargePercent: 0.00001, // 0.0001% as per data (0.0001/100)
+        insuranceChargePercent: 0.000001, // 0.0001% = 0.0001/100 = 0.000001
         ngtGreenTax: 0,
         keralaHandlingCharge: 0,
+        volumetricDivisor: 27000, // L×B×H ÷ 27,000
+        minimumChargeableWeight: 30, // Minimum 30 kg freight
       },
       { upsert: true, new: true }
     );
-    console.log('Fixed charges updated');
+    console.log('Fixed charges updated with volumetric divisor: 27000, min weight: 30kg');
 
     // Step 5: Update special charges (GST - 12%)
     console.log('Updating special charges...');

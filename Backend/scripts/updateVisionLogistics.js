@@ -133,13 +133,15 @@ async function updateVisionLogistics() {
         codCharge: 150,
         holidayCharge: 0,
         outstationCharge: 350, // Punjab/Haryana, other 750
-        insuranceChargePercent: 0.00001, // 0.0001% as per data
+        insuranceChargePercent: 0.000001, // 0.0001% = 0.0001/100 = 0.000001
         ngtGreenTax: 0,
         keralaHandlingCharge: 0,
+        volumetricDivisor: 27000, // L×B×H ÷ 27,000
+        minimumChargeableWeight: 20, // Minimum 20 kg
       },
       { upsert: true, new: true }
     );
-    console.log('Fixed charges updated');
+    console.log('Fixed charges updated with volumetric divisor: 27000, min weight: 20kg');
 
     // Step 5: Update special charges (GST - 18%)
     console.log('Updating special charges...');

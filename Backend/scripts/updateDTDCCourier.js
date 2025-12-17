@@ -177,10 +177,12 @@ async function updateDTDCCourier() {
         insuranceChargePercent: 0,
         ngtGreenTax: 0,
         keralaHandlingCharge: 0,
+        volumetricDivisor: 4750, // L×W×H ÷ 4,750
+        minimumChargeableWeight: 3, // Minimum 3 kg
       },
       { upsert: true, new: true }
     );
-    console.log('Fixed charges updated');
+    console.log('Fixed charges updated with volumetric divisor: 4750, min weight: 3kg');
 
     // Step 6: Update special charges (GST and E-way bill)
     console.log('Updating special charges...');

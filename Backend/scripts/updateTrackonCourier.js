@@ -165,10 +165,12 @@ async function updateTrackonCourier() {
         insuranceChargePercent: 0,
         ngtGreenTax: 0,
         keralaHandlingCharge: 0,
+        volumetricDivisor: 4500, // L×W×H ÷ 4,500
+        minimumChargeableWeight: 0, // No minimum specified
       },
       { upsert: true, new: true }
     );
-    console.log('Fixed charges updated');
+    console.log('Fixed charges updated with volumetric divisor: 4500');
 
     // Step 6: Update special charges (GST and E-way bill)
     console.log('Updating special charges...');

@@ -10,7 +10,9 @@ const fixedChargesSchema = new Schema({
   outstationCharge: { type: Number, required: true },
   insuranceChargePercent: { type: Number, required: true },
   ngtGreenTax: { type: Number, required: true },
-  keralaHandlingCharge: { type: Number, required: true }
+  keralaHandlingCharge: { type: Number, required: true },
+  volumetricDivisor: { type: Number, required: true, default: 27000 }, // Divisor for volumetric weight calculation (L×W×H ÷ divisor)
+  minimumChargeableWeight: { type: Number, required: true, default: 0 } // Minimum weight in kg for charging
 }, {
   timestamps: true,
 });

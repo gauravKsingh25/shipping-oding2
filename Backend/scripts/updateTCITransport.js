@@ -138,13 +138,15 @@ async function updateTCITransport() {
         codCharge: 100,
         holidayCharge: 250, // 250 minimum per docket of 10 KGS
         outstationCharge: 0, // ODA EXTRA - treating as variable
-        insuranceChargePercent: 0.0001, // 0.001% as per data (0.001/100)
+        insuranceChargePercent: 0.00001, // 0.001% = 0.001/100 = 0.00001
         ngtGreenTax: 100,
         keralaHandlingCharge: 0,
+        volumetricDivisor: 27000, // L×B×H ÷ 27,000
+        minimumChargeableWeight: 20, // Minimum 20 kg
       },
       { upsert: true, new: true }
     );
-    console.log('Fixed charges updated');
+    console.log('Fixed charges updated with volumetric divisor: 27000, min weight: 20kg');
 
     // Step 5: Update special charges (GST)
     console.log('Updating special charges...');

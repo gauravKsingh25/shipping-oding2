@@ -140,10 +140,12 @@ async function updateDTDCExpressCargo() {
         insuranceChargePercent: 0.01, // 100/10000 = 1%
         ngtGreenTax: 0, // NIL for green tax
         keralaHandlingCharge: 0,
+        volumetricDivisor: 27000, // L×B×H ÷ 27,000 (CFT method)
+        minimumChargeableWeight: 25, // Minimum 25 kg docket
       },
       { upsert: true, new: true }
     );
-    console.log('Fixed charges updated');
+    console.log('Fixed charges updated with volumetric divisor: 27000, min weight: 25kg');
 
     console.log('\n✅ DTDC Express Cargo charges updated successfully!');
     

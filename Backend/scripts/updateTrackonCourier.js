@@ -158,15 +158,15 @@ async function updateTrackonCourier() {
       { providerId },
       {
         providerId,
-        docketCharge: 0, // Not specified in data
+        docketCharge: 150,
         codCharge: 300,
         holidayCharge: 0,
         outstationCharge: 0,
         insuranceChargePercent: 0,
         ngtGreenTax: 0,
         keralaHandlingCharge: 0,
-        volumetricDivisor: 4500, // L×W×H ÷ 4,500
-        minimumChargeableWeight: 0, // No minimum specified
+        volumetricDivisor: 5000, // L×W×H ÷ 5,000
+        minimumChargeableWeight: 2, // Minimum 2 kg
       },
       { upsert: true, new: true }
     );

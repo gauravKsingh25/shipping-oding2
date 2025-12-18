@@ -141,8 +141,8 @@ async function updateTCITransport() {
         insuranceChargePercent: 0.00001, // 0.001% = 0.001/100 = 0.00001
         ngtGreenTax: 100,
         keralaHandlingCharge: 0,
-        volumetricDivisor: 27000, // L×B×H ÷ 27,000
-        minimumChargeableWeight: 20, // Minimum 20 kg
+        volumetricDivisor: 12096, // 1728×7 (6cft method)
+        minimumChargeableWeight: 10, // Minimum 10 kg
       },
       { upsert: true, new: true }
     );

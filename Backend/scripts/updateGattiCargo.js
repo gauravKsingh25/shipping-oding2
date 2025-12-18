@@ -102,8 +102,8 @@ async function updateGattiCargo() {
         insuranceChargePercent: 0.01, // 100/10000 = 1%
         ngtGreenTax: 100,
         keralaHandlingCharge: 0,
-        volumetricDivisor: 27000, // L×W×H ÷ 27,000
-        minimumChargeableWeight: 6, // Minimum 6 kg
+        volumetricDivisor: 27000, // L×W×H ÷ 27,000 (6cft method)
+        minimumChargeableWeight: 15, // Minimum 15 kg
       },
       { upsert: true, new: true }
     );

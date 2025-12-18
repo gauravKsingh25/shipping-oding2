@@ -129,8 +129,8 @@ async function updateDepeeWorld() {
         insuranceChargePercent: 0.01, // 100/10000 = 1%
         ngtGreenTax: 0, // NIL for green tax
         keralaHandlingCharge: 0,
-        volumetricDivisor: 27000, // L×W×H ÷ 27,000
-        minimumChargeableWeight: 6, // Minimum 6 kg
+        volumetricDivisor: 4500, // L×W×H ÷ 4,500
+        minimumChargeableWeight: 20, // Minimum 20 kg
       },
       { upsert: true, new: true }
     );

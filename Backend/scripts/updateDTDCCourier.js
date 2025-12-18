@@ -170,7 +170,7 @@ async function updateDTDCCourier() {
       { providerId },
       {
         providerId,
-        docketCharge: 150,
+        docketCharge: 50,
         codCharge: 150,
         holidayCharge: 0,
         outstationCharge: 0,

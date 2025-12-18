@@ -104,7 +104,9 @@ export default function Dashboard() {
             "Outstation Charge (INR)": f.outstationCharge,
             "Insurance Charge (%)": f.insuranceChargePercent,
             "NGT Green Tax (INR)": f.ngtGreenTax,
-            "Kerala North East Handling Charge (INR)": f.keralaHandlingCharge
+            "Kerala North East Handling Charge (INR)": f.keralaHandlingCharge,
+            "Volumetric Divisor": f.volumetricDivisor || 5000,
+            "Minimum Chargeable Weight (kg)": f.minimumChargeableWeight || 0
           }));
           setFixedCharges(transformedFixedCharges);
         }
@@ -206,12 +208,45 @@ export default function Dashboard() {
         console.warn(`Provider not found for ID: ${vendorId}`);
       }
 
-      let totalApplicableWeight = 0;
-      boxes.forEach(box => {
-        const volWeight = (box.length * box.breadth * box.height) / 5000;
-        const applicableWeight = Math.max(volWeight, box.deadWeight);
-        totalApplicableWeight += applicableWeight * box.quantity;
+      // Get volumetric divisor and minimum chargeable weight from fixed charges
+      const volumetricDivisor = Number(fixed?.["Volumetric Divisor"]) || 5000; // Default to 5000 if not found
+      const minimumChargeableWeight = Number(fixed?.["Minimum Chargeable Weight (kg)"]) || 0;
+
+      console.log(`\n📦 ${provider?.["Provider Name"]} - Weight Calculation:`);
+      console.log(`   Volumetric Divisor: ${volumetricDivisor}`);
+      console.log(`   Minimum Chargeable Weight (for entire shipment): ${minimumChargeableWeight} kg`);
+
+      // Calculate total actual weight and total volumetric weight
+      let totalActualWeight = 0;
+      let totalVolumetricWeight = 0;
+      
+      boxes.forEach((box, idx) => {
+        // Calculate volumetric weight for this box using the provider's specific divisor
+        const volWeightPerBox = (box.length * box.breadth * box.height) / volumetricDivisor;
+        
+        console.log(`   Box ${idx + 1}: ${box.length}×${box.breadth}×${box.height} cm, ${box.deadWeight} kg (qty: ${box.quantity})`);
+        console.log(`      Volume: ${box.length * box.breadth * box.height} cm³`);
+        console.log(`      Volumetric Weight per box: ${volWeightPerBox.toFixed(2)} kg`);
+        console.log(`      Actual Weight per box: ${box.deadWeight} kg`);
+        console.log(`      Total volumetric for ${box.quantity} box(es): ${(volWeightPerBox * box.quantity).toFixed(2)} kg`);
+        console.log(`      Total actual for ${box.quantity} box(es): ${(box.deadWeight * box.quantity).toFixed(2)} kg`);
+        
+        // Add to totals
+        totalActualWeight += box.deadWeight * box.quantity;
+        totalVolumetricWeight += volWeightPerBox * box.quantity;
       });
+
+      // Now apply minimum weight to the TOTAL shipment
+      const totalApplicableWeight = Math.max(totalActualWeight, totalVolumetricWeight, minimumChargeableWeight);
+      
+      const weightType = totalApplicableWeight === minimumChargeableWeight ? 'minimum' :
+                        totalApplicableWeight === totalVolumetricWeight ? 'volumetric' : 'actual';
+      
+      console.log(`\n   📊 TOTAL WEIGHT SUMMARY:`);
+      console.log(`      Total Actual Weight: ${totalActualWeight.toFixed(2)} kg`);
+      console.log(`      Total Volumetric Weight: ${totalVolumetricWeight.toFixed(2)} kg`);
+      console.log(`      Minimum Weight: ${minimumChargeableWeight} kg`);
+      console.log(`      ✅ Chargeable Weight: ${totalApplicableWeight.toFixed(2)} kg (using ${weightType})\n`);
 
       const perKilo = Number(stateRow["Per Kilo Fee (INR)"]) || 0;
       const fuelPct = Number(stateRow["Fuel Surcharge (%)"]) || 0;

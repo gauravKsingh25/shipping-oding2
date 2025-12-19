@@ -106,7 +106,8 @@ export default function Dashboard() {
             "NGT Green Tax (INR)": f.ngtGreenTax,
             "Kerala North East Handling Charge (INR)": f.keralaHandlingCharge,
             "Volumetric Divisor": f.volumetricDivisor || 5000,
-            "Minimum Chargeable Weight (kg)": f.minimumChargeableWeight || 0
+            "Minimum Chargeable Weight (kg)": f.minimumChargeableWeight || 0,
+            "Minimum Price (INR)": f.minimumPrice || 0
           }));
           setFixedCharges(transformedFixedCharges);
         }
@@ -199,14 +200,25 @@ export default function Dashboard() {
 
     console.log('Filtered state data:', stateFiltered);
 
-    const providerResults = await Promise.all(stateFiltered.map(async (stateRow) => {
+    // Filter out providers that don't exist in the providers list (deleted/inactive providers)
+    const validStateFiltered = stateFiltered.filter(stateRow => {
       const vendorId = stateRow["Provider ID"];
       const provider = providers.find(p => p["Provider ID"] === vendorId);
       const fixed = fixedCharges.find(f => f["Provider ID"] === vendorId);
-
-      if (!provider) {
-        console.warn(`Provider not found for ID: ${vendorId}`);
+      
+      if (!provider || !fixed) {
+        console.warn(`Skipping provider ID ${vendorId} - not found in active providers`);
+        return false;
       }
+      return true;
+    });
+
+    console.log(`Calculating for ${validStateFiltered.length} active providers`);
+
+    const providerResults = await Promise.all(validStateFiltered.map(async (stateRow) => {
+      const vendorId = stateRow["Provider ID"];
+      const provider = providers.find(p => p["Provider ID"] === vendorId);
+      const fixed = fixedCharges.find(f => f["Provider ID"] === vendorId);
 
       // Get volumetric divisor and minimum chargeable weight from fixed charges
       const volumetricDivisor = Number(fixed?.["Volumetric Divisor"]) || 5000; // Default to 5000 if not found
@@ -325,6 +337,10 @@ export default function Dashboard() {
       const total = baseCost + fuelCharge + docket + codCharge + holidayCharge + 
                    outstationCharge + ngtGreenTax + insuranceCharge + stateSpecificCharge + specialCharges;
 
+      // Apply minimum price if set (e.g., V Trans has minimum ₹500)
+      const minimumPrice = Number(fixed?.["Minimum Price (INR)"]) || 0;
+      const finalTotal = minimumPrice > 0 ? Math.max(total, minimumPrice) : total;
+
       return {
         providerId: vendorId,
         providerName: provider?.["Provider Name"] || `Unknown Provider (ID: ${vendorId})`,
@@ -341,7 +357,8 @@ export default function Dashboard() {
         stateSpecificCharge: stateSpecificCharge.toFixed(2),
         specialCharges: specialCharges.toFixed(2),
         specialChargesDetails: specialChargesDetails,
-        total: total.toFixed(2),
+        total: finalTotal.toFixed(2),
+        minimumPriceApplied: finalTotal > total ? minimumPrice : 0
       };
     }));
 

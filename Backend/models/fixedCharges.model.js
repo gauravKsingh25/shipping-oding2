@@ -12,7 +12,8 @@ const fixedChargesSchema = new Schema({
   ngtGreenTax: { type: Number, required: true },
   keralaHandlingCharge: { type: Number, required: true },
   volumetricDivisor: { type: Number, required: true, default: 27000 }, // Divisor for volumetric weight calculation (L×W×H ÷ divisor)
-  minimumChargeableWeight: { type: Number, required: true, default: 0 } // Minimum weight in kg for charging
+  minimumChargeableWeight: { type: Number, required: true, default: 0 }, // Minimum weight in kg for charging
+  minimumPrice: { type: Number, default: 0 } // Minimum price in rupees - if calculated total is less than this, use this value
 }, {
   timestamps: true,
 });

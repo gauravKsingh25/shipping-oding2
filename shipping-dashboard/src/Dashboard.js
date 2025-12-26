@@ -234,11 +234,17 @@ export default function Dashboard() {
       
       boxes.forEach((box, idx) => {
         // Calculate volumetric weight for this box using the provider's specific divisor
-        const volWeightPerBox = (box.length * box.breadth * box.height) / volumetricDivisor;
+        let volWeightPerBox = (box.length * box.breadth * box.height) / volumetricDivisor;
+        
+        // For 27000 divisor (6 CFT), multiply by 6 for each box
+        // Don't touch divisors around 4500, 4750, 5000
+        if (volumetricDivisor === 27000) {
+          volWeightPerBox = volWeightPerBox * 6;
+        }
         
         console.log(`   Box ${idx + 1}: ${box.length}×${box.breadth}×${box.height} cm, ${box.deadWeight} kg (qty: ${box.quantity})`);
         console.log(`      Volume: ${box.length * box.breadth * box.height} cm³`);
-        console.log(`      Volumetric Weight per box: ${volWeightPerBox.toFixed(2)} kg`);
+        console.log(`      Volumetric Weight per box: ${volWeightPerBox.toFixed(2)} kg${volumetricDivisor === 27000 ? ' (×6 for 6 CFT)' : ''}`);
         console.log(`      Actual Weight per box: ${box.deadWeight} kg`);
         console.log(`      Total volumetric for ${box.quantity} box(es): ${(volWeightPerBox * box.quantity).toFixed(2)} kg`);
         console.log(`      Total actual for ${box.quantity} box(es): ${(box.deadWeight * box.quantity).toFixed(2)} kg`);

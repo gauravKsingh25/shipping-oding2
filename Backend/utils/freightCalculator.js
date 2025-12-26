@@ -12,7 +12,13 @@
  * @returns {number} Volumetric weight in kg
  */
 function calculateVolumetricWeight(length, width, height, divisor = 27000) {
-  return (length * width * height) / divisor;
+  const baseWeight = (length * width * height) / divisor;
+  // For 27000 divisor (6 CFT), multiply by 6 as per requirement
+  // Don't touch divisors around 4500, 4750, 5000
+  if (divisor === 27000) {
+    return baseWeight * 6;
+  }
+  return baseWeight;
 }
 
 /**
